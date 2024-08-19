@@ -3,7 +3,10 @@
 #wrapper{max-width: 1920px; margin: 0 auto; min-width: 320px; background-color: #FFFDF4;}
 
 
-/* header{} */
+header{
+    position: relative;
+    z-index: 99999;
+}
 header .wrap{
     height: 58px;
     border-bottom:1px solid #000 ;
@@ -125,8 +128,12 @@ header .wrap nav .gnb .navi .sub-navi .list{
 }  
 /* header .wrap nav .gnb .navi .sub-navi .list a{
 }   */
-.banner{}
-.banner .wrap{}
+/* .banner{
+}
+*/
+.banner .wrap{
+    padding: 20px 16px;
+}
 .banner .wrap .con{
     display: flex;
     flex-direction: column;
@@ -134,36 +141,46 @@ header .wrap nav .gnb .navi .sub-navi .list{
     align-items: center;
 }
 .banner .wrap .con .thumb{
-    width: 370px;
-    height: 544px;
-    background-size: cover;
-    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0,0,0,0.8)) ,url(../images/main.jfif);
-    display: flex;
-    justify-content: flex-end;
-    align-items:center;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 0;
+    position: relative;
 }
+.banner .wrap .con .thumb::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0,0,0,0.8));
+    position: absolute;    
+    top: 0;
+    left: 0;
+}
+.banner .wrap .con .thumb .image img{width: 100%;}
 .banner .wrap .con .thumb .txt{
     width: 340px;
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px;
 }
 .banner .wrap .con .thumb .txt .tit{
     color: #fff;
-    font-size: 13px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 12px;
 }
 .banner .wrap .con .thumb .txt .date{
     color: #fff;
-    font-size: 11px;
+    /* font-size: 11px; */
+    font-size: 14px;
 
 }
-.banner .wrap .con .thumb img{
-}
+/* .banner .wrap .con .thumb img{
+} */
 .banner .wrap .con .txt-box{
     display: flex;
     width: 100%;
-    padding: 0 10px;
+    padding: 20px 0;
     gap: 10px;
 }
 .banner .wrap .con .txt-box .box1,
@@ -197,3 +214,132 @@ header .wrap nav .gnb .navi .sub-navi .list{
     width: 50px;
     padding-left: 10px;
 }
+.banner .wrap .con .info{
+    width: 100%;
+}
+.banner .wrap .con .info .time,
+.banner .wrap .con .info .ticket,
+.banner .wrap .con .info .calendar
+{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+}
+.banner .wrap .con .info .time img,
+.banner .wrap .con .info .ticket img,
+.banner .wrap .con .info .calendar img{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+}
+.banner .wrap .con .info .time .txt,
+.banner .wrap .con .info .ticket .txt,
+.banner .wrap .con .info .calendar .txt{
+    margin-left: 60px;
+}
+.banner .wrap .con .info .time .txt h2,
+.banner .wrap .con .info .ticket .txt h2,
+.banner .wrap .con .info .calendar .txt h2{
+    font-size: 16px;
+}
+.banner .wrap .con .info .time .txt .sub,
+.banner .wrap .con .info .calendar .txt .sub{
+    display: flex;
+    justify-content: space-between;
+}
+.banner .wrap .con .info .time .txt .sub h3,
+.banner .wrap .con .info .ticket .txt h3,
+.banner .wrap .con .info .calendar .txt .sub h3{
+    font-size: 13px ;
+}
+.banner .wrap .con .info .time .txt .sub p,
+.banner .wrap .con .info .calendar .txt .sub p{
+    font-size: 11px;
+    color: #787876 ;
+    position: absolute;
+    right: 0;
+}
+.section1{
+    padding: 20px 16px;
+}
+.section1 .wrap{}
+.section1 .wrap h1{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.section1 .wrap .thumb{
+    position: relative;
+}
+.section1 .wrap .thumb img{
+    width: 70%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.section1 .wrap .thumb .arrow{
+    background-color: pink;
+}
+.section1 .wrap .thumb .arrow a{
+}
+.section1 .wrap .thumb .arrow a img{
+    width: 50px;
+    background-color: yellowgreen;
+}
+.section1 .wrap .thumb .arrow a img:nth-child(1){
+    left: 0;
+    position: absolute;
+    top: 50%;
+}
+.section1 .wrap .thumb .arrow a img:nth-child(2){
+    right: 0;
+    position: absolute;
+    top: 50%;
+}
+.section1 .wrap .txt{
+    margin-bottom: 20px;
+}
+.section1 .wrap .txt h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.section1 .wrap .info{
+}
+.section1 .wrap .info .tit{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid red;
+    gap: 35%;
+
+}
+.section1 .wrap .info .tit h3{
+    background-color: antiquewhite;
+    font-size: 18px;
+}
+.section1 .wrap .info .bar{
+    display: flex;
+}
+.section1 .wrap .info .bar .bar1{
+    height: 7px;
+    width: 50%;
+    background-color: #d9d9d9;
+    border-radius: 50px;
+}
+.section1 .wrap .info .bar .bar2{
+    height: 7px;
+    width: 50%;
+    background-color: #d9d9d9;
+    border-radius: 50px;
+}
+.section1 .wrap .info .exp{}
+.section1 .wrap .info .exp .exp1{}
+.section1 .wrap .info .exp .exp1 h3{
+    color: #949494;
+}
+.section1 .wrap .info .exp .exp1 p{}
+.section1 .wrap .info .exp .exp2{}
+.section1 .wrap .info .exp .exp2 h3{}
+.section1 .wrap .info .exp .exp2 p{}
+.section1 .wrap .info .exp .exp3 h3{}
+.section1 .wrap .info .exp .exp3 p{}
