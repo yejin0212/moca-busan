@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/pc.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="wrap">
+                <h1><a href="#"><img src="./images/moca_logo.png" alt=""></a></h1>
+                <div class="head">
+                    <div class="lang"><a href="#">ENG</a></div>
+                    <div class="btn-search"><button type="button"><img src="./images/search.icon.png" alt=""></button></div>
+                    <div class="btn-open"><button type="button"><img src="./images/open.icon.png" alt=""></button></div>
+                </div>
+                <nav>
+                    <div class="top">
+                        <div class="logo">bMoCA</div>
+                        <div class="btn-cls"><button type="button"><img src="./images/close.icon.png" alt=""></button></div>
+                    </div>
+                    <div class="gnb">
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">이용안내</button>
+                            </div>
+                            <div class="sub-navi">
+                                <div class="list"><a href="#">관람안내</a></div>
+                                <div class="list"><a href="#">오시는길</a></div>
+                                <div class="list"><a href="#">단체관람안내</a></div>
+                                <div class="list"><a href="#">전시관람예절</a></div>
+                                <div class="list"><a href="#">층별안내</a></div>
+                                <div class="list"><a href="#">대관안내</a></div>
+                            </div>
+                        </div>
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">전시</button>
+                            </div>
+                            <div class="sub-navi">
+                                <div class="list"><a href="#">현재전시</a></div>
+                                <div class="list"><a href="#">예정전시</a></div>
+                                <div class="list"><a href="#">지난전시</a></div>
+                                <div class="list"><a href="#">온라인 미술관</a></div>
+                                <div class="list"><a href="#">무장애 미술관</a></div>
+                            </div>
+                        </div>
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">책그림섬</button>
+                            </div>
+                            <div class="sub-navi">
+                                <div class="list"><a href="#">소개</a></div>
+                                <div class="list"><a href="#">이용예약</a></div>
+                                <div class="list"><a href="#">프로그램</a></div>
+                                <div class="list"><a href="#">소식</a></div>
+                            </div>
+                        </div>
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">교육 및 문화행사</button>
+                            </div>
+                            <div class="sub-navi">
+                                <div class="list"><a href="#">현재/예정 프로그램</a></div>
+                                <div class="list"><a href="#">지난 프로그램</a></div>
+                            </div>
+                        </div>
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">소장품</button>
+                            </div>
+                            <div class="sub-navi">
+                                <div class="list"><a href="#">소장품보기</a></div>
+                                <div class="list"><a href="#">모카이브</a></div>
+                            </div>
+                        </div>
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">소식/참여</button>
+                            </div>
+                            <div class="sub-navi">
+                                <div class="list"><a href="#">공지사항</a></div>
+                                <div class="list"><a href="#">보도자료</a></div>
+                            </div>
+                        </div>
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">자료실</button>
+                            </div>
+                        </div>
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">미술관 소개</button>
+                            </div>
+                            <div class="sub-navi">
+                                <div class="list"><a href="#">연혁</a></div>
+                                <div class="list"><a href="#">조직도 및 업무분장</a></div>
+                                <div class="list"><a href="#">관련법령</a></div>
+                            </div>
+                        </div>
+                        <div class="navi">
+                            <div class="tit">
+                                <button type="button">온라인 예약</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="banner">
+            <div class="wrap">
+                <div class="con">
+                    <div class="thumb">
+                        <div class="txt">
+                            <div class="tit">
+                            포스트모던 어린이 [1부]: 불안한 어린이를 위해 조용한 자장가를 불러주지 마세요
+                            </div>
+                            <div class="date">
+                                기간 : 2023. 5. 5.(금) ~  2023. 8. 27.(일)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="txt-box">
+                        <div class="box1">
+                            <a href="#">
+                                <p>관람안내</p>
+                                <img src="./images/arrow_right.png" alt="">
+                            </a>
+                        </div>
+                        <div class="box2">
+                            <a href="#">
+                                <p>오시는길</p>
+                                <img src="./images/arrow_right.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./jquery/jquery-3.7.1.min.js"></script>
+    <script src="./jquery/jquery-ui.js"></script>
+    <script>
+        const $nav = document.querySelector("nav");
+        const $opn = document.querySelector(".btn-open");
+        const $cls = document.querySelector(".btn-cls");
+    
+        $opn.addEventListener("click", () =>{
+            $nav.style.left = 0;
+        });
+        $cls.addEventListener("click", () =>{
+            $nav.style.left = "-100%";
+        });
+        $(".navi .tit").on("click", function(){
+            $(".navi .tit").css("border-bottom", "1px solid #000");
+            $(".navi .tit button").css("color", "#000");
+            $(this).css("border-bottom", "3px solid #0093cf");
+            $(this).children().css("color", "#0093cf");
+            $(this).siblings().stop().slideDown(300);
+            $(this).parent().siblings().find(".sub-navi").slideUp();
+        })
+        
+        
+    </script>
+</body>
+</html>

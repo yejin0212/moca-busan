@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            padding: 20px 0 50px;
+        }
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 40px;
+            margin: 0 auto;
+            max-width: 1080px;
+        }
+        .container .col{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .container .col .box{
+            box-shadow: 4px 4px 4px #00000022;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .container .col .box:hover{
+            filter: brightness(0.6);
+        }
+        .container .col .box img{
+            width: 100%;
+            height: auto;
+        }
+
+        .modal{
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,.6);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal .close{
+            cursor: pointer;
+            position: absolute;
+            left: 6%;
+            top: 13%;
+            background-color: #fff;
+            width: 35px;
+            height: 5px;
+            transform: rotate(45deg);
+            border-radius: 5px;
+        }
+        .modal .close::after{
+            content: '';
+            position: absolute;
+            width: 35px;
+            height: 5px;
+            background-color: #fff;
+            transform: rotate(90deg);
+            border-radius: 5px;
+        }
+        .modal .popup{
+            margin: 40px;
+            width: 80%;
+            height: 85%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-radius: 10px;
+            position: relative;
+            top: 30%;
+            left: 40%;
+            transform: translate(-40%,-30%);
+        }
+        .modal .popup .save{
+            position: absolute;
+            top: 15px;
+            right: 170px;
+            width: 140px;
+            height: 40px;
+            background-color: rgb(84, 126, 126);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal .popup .save p{
+            color: #fff;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        .modal .popup .down{
+            width: 140px;
+            height:40px;
+            background-color: darkslategrey;
+            position: absolute;
+            top:15px;
+            right:20px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .modal .popup .down p{
+            font-size: 15px;
+            font-weight: bolder;
+            color: #fff;
+            margin-left: 9px;
+        }
+        .modal .popup .down .ico{
+            position: relative;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            padding-top: 14px;
+        }
+        
+        .modal .popup .down .ico::after{
+            position: absolute;
+            display:inline-block;
+            content: '';
+            width: 8px;
+            height: 8px;
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+            transform: rotate(-45deg);
+
+        }
+        .modal .popup .img{
+            width: 100%;
+        }
+        /* .modal .popup .img img{
+        } */
+        .modal .dir{
+            display: flex;
+            justify-content: space-between;
+        }
+        .modal .dir .prev{
+            cursor: pointer;
+            position: absolute;
+            top:50%;
+            left:5%;
+            transform: translateX(-50%);
+            
+        }
+        .modal .dir .prev::after{
+            content: '';
+            width: 50px;
+            height: 50px;
+            border-top: 8px solid #fff;
+            border-right: 8px solid #fff;
+            display: inline-block;
+            transform: rotate(225deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+        .modal .dir .next{
+            cursor: pointer;
+            position: absolute;
+            right: 8%;
+            top: 50%;
+            transform: translateX(-50%);
+        }
+        .modal .dir .next::after{
+            content: '';
+            width: 50px;
+            height: 50px;
+            border-top: 8px solid #fff;
+            border-right: 8px solid #fff;
+            display: inline-block;
+            transform: rotate(45deg);
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Gallery</h1>
+    <div class="container">
+        <div class="col">
+            <div class="box"><img src="https://images.unsplash.com/photo-1721743775338-483edf8f846f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8" alt=""></div>
+            <div class="box"><img src="https://plus.unsplash.com/premium_photo-1712016875079-5c42a61067e2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8" alt=""></div>
+            <div class="box"><img src="https://images.unsplash.com/photo-1721655799196-7c50607778a9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8" alt=""></div>
+        </div>
+        <div class="col">
+            <div class="box"><img src="https://images.unsplash.com/photo-1721905126607-6700881aaa95?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+            <div class="box"><img src="https://images.unsplash.com/photo-1721905578473-7b0fa5b190ac?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+            <div class="box"><img src="https://images.unsplash.com/photo-1721743141802-f01a0437c19b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyM3x8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+        </div>
+        <div class="col">
+            <div class="box"><img src="https://images.unsplash.com/photo-1721893484306-23d5379b5d9f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNXx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+            <div class="box"><img src="https://images.unsplash.com/photo-1721750736787-316eb592e955?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOXx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+            <div class="box"><img src="https://plus.unsplash.com/premium_photo-1719682675205-dc0329a23406?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="close"></div>
+        <div class="popup">
+            <div class="save">
+                <p>저장하기</p>
+            </div>
+            <div class="down">
+                <p>무료다운로드</p>
+                <div class="ico"></div>
+            </div>
+            <div class="img">
+                <img src="" alt="">
+            </div>
+            </div>
+        <div class="dir">
+            <div class="prev"></div>
+            <div class="next"></div>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(".box img").on("click" , function(){
+            $(".modal").show();
+        })
+        $(".close").on("click", function(){
+            $(".modal").hide();
+        })
+        
+        $(".box").on("click", function(e){
+            e.preventDefault();
+            var imgSrc = $(this).children().attr("src")
+            $(".img img").attr("src",imgSrc);            
+        })
+
+        //여백을 누르면 꺼지는 방법
+        $(".modal").on("click", function(){
+            // 부모의 이벤트는 자식에게 전파된다 (event capturing)
+            $(this).css("display", "none");
+        })
+        $(".modal .popup").on("click",function(e){
+            e.stopPropagation();
+            // =>이벤트 캡처링을 막아줌
+        })
+    </script>
+</body>
+</html>
