@@ -281,18 +281,35 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section1 .wrap .thumb .arrow{
     background-color: pink;
 }
-.section1 .wrap .thumb .arrow a{
-}
-.section1 .wrap .thumb .arrow a span{
-    font-size: 45px;
+.section1 .wrap .thumb .arrow button{}
+.section1 .wrap .thumb .arrow button .arrow-prev{}
+.section1 .wrap .thumb .arrow button .arrow-prev::after{
     position: absolute;
+    left: 0; 
     top: 50%;
     transform: translateY(-50%);
+    content: '';
+    width: 35px; 
+    height: 35px;
+    border-top: 3px solid #000; 
+    border-right: 3px solid #000; 
+    transform: rotate(225deg)
 }
-.section1 .wrap .thumb .arrow a span:nth-child(2){
+.section1 .wrap .thumb .arrow button .arrow-next{}
+.section1 .wrap .thumb .arrow button .arrow-next::after{
     position: absolute;
-    right: 0;
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 35px; 
+    height: 35px;
+    border-bottom: 3px solid #000; 
+    border-left: 3px solid #000; 
+    transform: rotate(225deg)
 }
+
+
 .section1 .wrap .txt{
     margin-bottom: 20px;
 }
@@ -483,18 +500,184 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section4 .wrap .contents{
     display: flex;
     justify-content: center;
+    position: relative;
 }
+.section4 .wrap .contents .arrow{
+}
+.section4 .wrap .contents .arrow button{
+}
+.section4 .wrap .contents .arrow button .arrow-prev{
+}
+.section4 .wrap .contents .arrow button .arrow-prev::after{
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width:25px; 
+    height: 25px;
+    border-top: 3px solid #000; 
+    border-right: 3px solid #000; 
+    transform: rotate(225deg)
+}
+.section4 .wrap .contents .arrow button .arrow-next{}
+.section4 .wrap .contents .arrow button .arrow-next::after{
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 25px; 
+    height: 25px;
+    border-bottom: 3px solid #000; 
+    border-left: 3px solid #000; 
+    transform: rotate(225deg)
+}
+
+
 .section4 .wrap .contents .pro1{
-    width: 90%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section4 .wrap .contents .pro1 img{
+    width: 95%;
+    margin: 0 auto;
+
 }
 .section4 .wrap .contents .pro1 .txt{
-    width: 100%;
+    width: 110%;
     padding: 10px;
     border-top: 2px solid #000;
-    border-bottom:  2px solid #000;
-    margin-top: 8px;
+    border-bottom: 2px solid #000;
+    /* margin-top: 8px; */
 }
 .section4 .wrap .contents .pro1 .txt h2{
+    font-weight: bolder;
     font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
 }
-.section4 .wrap .contents .pro1 .txt p{}
+.section4 .wrap .contents .pro1 .txt p{
+    font-size: 13px;
+}
+.section5{
+    padding: 20px 16px;
+}
+.section5 .wrap{}
+.section5 .wrap h1{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.section5 .wrap .contents{
+    position: relative;
+}
+.section5 .wrap .arrow{}
+.section5 .wrap .arrow button{}
+.section5 .wrap .arrow button .arrow-prev{}
+.section5 .wrap .arrow button .arrow-prev::after{
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width:25px; 
+    height: 25px;
+    border-top: 3px solid #000; 
+    border-right: 3px solid #000; 
+    transform: rotate(225deg)
+}
+.section5 .wrap .arrow button .arrow-next{}
+.section5 .wrap .arrow button .arrow-next::after{
+    position: absolute;
+    right: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    content: '';
+    width: 25px; 
+    height: 25px;
+    border-bottom: 3px solid #000; 
+    border-left: 3px solid #000; 
+    transform: rotate(225deg)
+}
+.section5 .wrap .con{
+}
+.section5 .wrap .con .con1{
+    background-color: yellow;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.section5 .wrap .con .con1::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0,0,0,0.6));
+    position: absolute;    
+    top: 0;
+    left: 0;
+}
+.section5 .wrap .con .con1 img{
+    width: 100%;
+}
+.section5 .wrap .con .con1 .txt{
+    position: absolute;
+    top: 60%;
+    z-index: 9999;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.section5 .wrap .con .con1 .txt h2{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 8px;
+    
+}
+.section5 .wrap .con .con1 .txt p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.section6{
+    padding: 20px 16px;
+}
+.section6 .wrap{}
+.section6 .wrap .infoTab{
+    display: flex;
+}
+.section6 .wrap .infoTab li{
+    font-weight: bolder;
+    font-size: 18px;
+    margin-left: 14px;
+    color: #757575;
+    margin-bottom: 10px;
+}
+.section6 .wrap .infoTab li:nth-child(1){
+    margin-left: 0;
+}
+.section6 .wrap .tabTxt1{
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+}
+.section6 .wrap .tabTxt1 li{
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+.section6 .wrap .tabTxt1 li:nth-child(3){
+    border-bottom: 0;
+}
+.section6 .wrap .tabTxt1 li p:nth-child(1){
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.section6 .wrap .tabTxt1 li p:nth-child(2){
+    font-size: 16px;
+}
