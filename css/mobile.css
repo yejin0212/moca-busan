@@ -276,25 +276,22 @@ header .wrap nav .gnb .navi .sub-navi .list{
     width: 70%;
     border-radius: 12px;
     margin-bottom: 20px;
+    
 }
 .section1 .wrap .thumb .arrow{
     background-color: pink;
 }
 .section1 .wrap .thumb .arrow a{
 }
-.section1 .wrap .thumb .arrow a img{
-    width: 50px;
-    background-color: yellowgreen;
-}
-.section1 .wrap .thumb .arrow a img:nth-child(1){
-    left: 0;
+.section1 .wrap .thumb .arrow a span{
+    font-size: 45px;
     position: absolute;
     top: 50%;
+    transform: translateY(-50%);
 }
-.section1 .wrap .thumb .arrow a img:nth-child(2){
+.section1 .wrap .thumb .arrow a span:nth-child(2){
+    position: absolute;
     right: 0;
-    position: absolute;
-    top: 50%;
 }
 .section1 .wrap .txt{
     margin-bottom: 20px;
@@ -303,43 +300,201 @@ header .wrap nav .gnb .navi .sub-navi .list{
     font-size: 20px;
     font-weight: bolder;
 }
-.section1 .wrap .info{
+.section1 .wrap .con{
+    height: 185px;  
+    position: relative;
 }
-.section1 .wrap .info .tit{
+.section1 .wrap .con .tab{
     display: flex;
     justify-content: center;
-    padding: 10px;
-    border: 1px solid red;
-    gap: 35%;
+    margin-bottom: 15px;
 
 }
-.section1 .wrap .info .tit h3{
-    background-color: antiquewhite;
+.section1 .wrap .con .tab li{
+    font-size: 18px;
+    width: 50%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 7px solid #d9d9d9;
+    font-weight: bolder;
+}
+.section1 .wrap .con .tab li:nth-child(1){
+    border-bottom: 7px solid #000;
+}
+
+
+.section1 .wrap .con .txt .information{
+    display: flex;
+    flex-direction: column;
+}
+.section1 .wrap .con .txt .information .info1{
+}
+.section1 .wrap .txt .information .info1 h3,
+.section1 .wrap .txt .information .info2 h3,
+.section1 .wrap .txt .information .info3 h3{
+    display: inline-block;
+    color: #757575;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.section1 .wrap .txt .information .info1 P,
+.section1 .wrap .txt .information .info2 P{
+    display: inline-block;
+    position: absolute;
+    left: 80px;
+    text-wrap: nowrap;
+    font-size: 16px;
+
+}
+.section1 .wrap .txt .information .info2{
+}
+.section1 .wrap .txt .information .info3{
+}
+.section1 .wrap .txt .information .info3 P{
+    display: inline-block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    position: absolute;
+    left: 80px;
+    top: 116px;
+    font-size: 16px;
+    position: absolute;
+    top: 106px;
+}
+/* .wrap .txt .intro1{
+    font-size: 19px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    width: 95%;
+    margin: 0 auto;
+} */
+.section1 .wrap .txt .intro{
+    display: none;
+}
+.section1 .wrap .txt .intro .intro1{
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    width: 95%;
+    margin: 0 auto;
+}
+.section2{
+    padding: 20px 0 20px 16px;
+
+}
+.section2 .wrap{}
+.section2 .wrap h1{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.section2 .wrap .slide{
+    display: flex;
+    overflow: hidden;
+}
+.section2 .wrap .slide .collection{
+    display: flex;
+    gap: 10px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    align-items: end;
+    flex-direction: initial;
+}
+.section2 .wrap .slide .col{
+    margin-left: 20px;
+}
+.section2 .wrap .slide .col a{}
+.section2 .wrap .slide .col a img{
+    object-fit: contain;
+    max-width: 400px;
+    max-height: 400px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.section2 .wrap .slide .col a h2{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.section2 .wrap .slide .col a p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.section3{
+    margin: 50px 0;
+    width: 100%;
+    
+}
+.section3 .wrap{
+    height:150px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/book_land.jpg);
+    background-attachment:fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.section3 .wrap a{
+}
+.section3 .wrap h1{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 100;
+}
+.section3 .wrap h2{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.section3 .wrap p{
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0 auto;
+}
+.section4{
+    padding: 20px 16px;
+}
+.section4 .wrap{}
+.section4 .wrap h1{
+    font-size: 24px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+.section4 .wrap .contents{
+    display: flex;
+    justify-content: center;
+}
+.section4 .wrap .contents .pro1{
+    width: 90%;
+}
+.section4 .wrap .contents .pro1 .txt{
+    width: 100%;
+    padding: 10px;
+    border-top: 2px solid #000;
+    border-bottom:  2px solid #000;
+    margin-top: 8px;
+}
+.section4 .wrap .contents .pro1 .txt h2{
     font-size: 18px;
 }
-.section1 .wrap .info .bar{
-    display: flex;
-}
-.section1 .wrap .info .bar .bar1{
-    height: 7px;
-    width: 50%;
-    background-color: #d9d9d9;
-    border-radius: 50px;
-}
-.section1 .wrap .info .bar .bar2{
-    height: 7px;
-    width: 50%;
-    background-color: #d9d9d9;
-    border-radius: 50px;
-}
-.section1 .wrap .info .exp{}
-.section1 .wrap .info .exp .exp1{}
-.section1 .wrap .info .exp .exp1 h3{
-    color: #949494;
-}
-.section1 .wrap .info .exp .exp1 p{}
-.section1 .wrap .info .exp .exp2{}
-.section1 .wrap .info .exp .exp2 h3{}
-.section1 .wrap .info .exp .exp2 p{}
-.section1 .wrap .info .exp .exp3 h3{}
-.section1 .wrap .info .exp .exp3 p{}
+.section4 .wrap .contents .pro1 .txt p{}

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link rel="stylesheet" href="./css/pc.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <div id="wrapper">
@@ -15,7 +16,7 @@
                 <h1><a href="#"><img src="./images/moca_logo.png" alt=""></a></h1>
                 <div class="head">
                     <div class="lang"><a href="#">ENG</a></div>
-                    <div class="btn-search"><button type="button"><img src="./images/search.icon.png" alt=""></button></div>
+                    <div class="btn-search"><button type="button"><a href="#"><img src="./images/search.icon.png" alt=""></a></button></div>
                     <div class="btn-open"><button type="button"><img src="./images/open.icon.png" alt=""></button></div>
                 </div>
                 <nav>
@@ -180,8 +181,8 @@
                     <img src="./images/section1 img.jfif" alt="">
                     <div class="arrow">
                         <a href="#">
-                            <img src="./images/arrow_back.png" alt="">
-                            <img src="./images/arrow_forward.png" alt="">
+                            <span class="material-symbols-outlined">arrow_back_ios</span>
+                            <span class="material-symbols-outlined">arrow_forward_ios</span>
                         </a>
                     </div>     
                 </div>
@@ -190,31 +191,115 @@
                         포스트모던 어린이 [2부]: 까다로운 어린이를 위해 특별한 음식을 준비하지 마세요 
                     </h2>
                 </div>
-                <div class="info"> 
-                    <div class="tit">
-                        <h3>전시정보</h3>
-                        <h3>전시소개</h3>
-                    </div>
-                    <div class="bar">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                    </div>
-                    <div class="exp">
-                        <div class="exp1">
-                            <h3>기간</h3>
-                            <p>2023. 5. 5.(금) ~ 2023. 8.27.(일)</p>
+                <div class="con"> 
+                    <ul class="tab">
+                        <li>전시정보</li>
+                        <li>전시소개</li>
+                    </ul>
+                    <div class="txt">
+                        <div class="information a">
+                            <div class="info1">
+                                <h3>기간</h3>
+                                <p>2023. 5. 5.(금) ~ 2023. 8.27.(일)</p>
+                            </div>
+                            <div class="info2">
+                                <h3>전시장소</h3>
+                                <p>부산현대미술관 전시실 3,4,5</p>
+                            </div>
+                            <div class="info3">
+                                <h3>참여작가</h3>
+                                <p>2ceramists(민승기+연호경), 고요손, 김나희, 김슬기, 김우진, 김주영, 김지용, 김한샘, 노한솔, 다모, 드림 팝, 미디다이스, 박솜, 박여주, 변순철, 서인지, 송예환, 신정식, 안태원, 업체eobchae, 오가영, 워크스, 윤충근, 이명미, 이은, 이은솔, 일상의실천, 콜렉티브 꼼, 토담, HHHA, 아이에스븨엔, 000, 스크리닝 프로젝트: 동시상영(샤론 헤이즈, 아나히타 가즈비니자 데, 레나타 분터, 요한나 빌링, 가이 벤너), 한국독립애니메이션협회(씨앗), 닉 코스마스, 아르디라 푸트라, 알리스터 니콜스, 엑스칼리버, 울랄라 이마이, 율리 야마가타, 캐스퍼 보스만스, 쿄코 이데츠, 파라 아타시</p>
+                            </div>
                         </div>
-                        <div class="exp2">
-                            <h3>전시장소</h3>
-                            <p>부산현대미술관 전시실 3,4,5(지하1층)</p>
-                        </div>
-                        <div class="exp3">
-                            <h3>참여작가</h3>
-                            <p>2ceramists(민승기+연호경), 고요손, 김나희, 김슬기, 김우진, 김주영, 김지용, 김한샘, 노한솔, 다모, 드림 팝, 미디다이스, 박솜, 박여주, 변순철, 서인지, 송예환, 신정식, 안태원, 업체eobchae, 오가영, 워크스, 윤충근, 이명미, 이은, 이은솔, 일상의실천, 콜렉티브 꼼, 토담, HHHA, 아이에스븨엔, 000, 스크리닝 프로젝트: 동시상영(샤론 헤이즈, 아나히타 가즈비니자데, 레나타 분터, 요한나 빌링, 가이 벤너), 한국독립애니메이션협회(씨앗), 닉 코스마스, 아르디라 푸트라, 알리스터 니콜스, 엑스칼리버, 울랄라 이마이, 율리 야마가타, 캐스퍼 보스만스, 쿄코 이데츠, 파라 아타시</p>
+                        <div class="intro a">
+                            <div class="intro1">
+                                《포스트모던어린이》는 어린이라는 존재 형태가 훈육의 대상으로 드러날 수밖에 없는이유를 보편타당이라는 개념에 근거한 근대의 연속으로 이해하고 이러한 계몽적 사고가 봉착한 위기 상황을 비판적으로 고찰한다. 전시는 근대의이원론적 질서를 포기하기 위해 분리와 해방이라는 특정한 상황을 제시한다. 전시의 1부에서는 먼저 근대와의 분리를 통해 이성 중심의 사고가설정한 어린이 개념이 어린이 개인의 고유성을 부정하고 억압하는 방식으로전개해 왔음을 확인한다. 2023년 5월에 이어지는 전시의 2부에서는 근대로부터의 해방을 주제로 보편타당으로여겨왔던 지식이 해체되었을 때 비로소 다양한 존재 형태의 공존이 가능함을 이야기한다. 
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>   
+        </div>
+        <div class="section2">
+            <div class="wrap">
+                <h1>소장품</h1>
+                <div class="slide">
+                    <div class="collection">
+                        <div class="col collection1">
+                            <a href="#">
+                                <img src="./images/coll4.jpg" alt="">
+                                <h2>일상인</h2>
+                                <p>박지현</p>
+                            </a>
+                        </div>
+                        <div class="col collection2">
+                            <a href="#">
+                                <img src="./images/coll2.jpg" alt="">
+                                <h2>풀숲에 지는 달</h2>
+                                <p>김춘자</p>
+                            </a>
+                        </div>
+                        <div class="col collection3">
+                            <a href="#">
+                                <img src="./images/coll3.jpg" alt="">
+                                <h2>감만동의 문들</h2>
+                                <p>박지현</p>
+                            </a>
+                        </div>
+                        <div class="col collection4">
+                            <a href="#">
+                                <img src="./images/coll1.jpg" alt="">
+                                <h2>변신</h2>
+                                <p>김성철</p>
+                            </a>
+                        </div>
+                        <div class="col collection5">
+                            <a href="#">
+                                <img src="./images/coll5.jpg" alt="">
+                                <h2>침묵하는 북</h2>
+                                <p>홍영인</p>
+                            </a>
+                        </div>
+                        <div class="col collection6">
+                            <a href="#">
+                                <img src="./images/coll6.jpg" alt="">
+                                <h2>온몸에 풀 꽂고 걷기</h2>
+                                <p>임동식</p>
+                            </a>
+                        </div>
+                        <div class="col collection7">
+                            <a href="#">
+                                <img src="./images/coll7.jpg" alt="">
+                                <h2>Dummy No.63~No.83</h2>
+                                <p>박웅규</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="wrap">
+                <a href="#">
+                    <h1>‘나’와 ‘세상’에 대한 새로운 읽기를 시도하는 공간</h1>
+                    <h2>책 그림섬</h2>
+                    <p>더 알아보기</p>
+                </a>
+            </div>
+        </div>
+        <div class="section4">
+            <div class="wrap">
+                <h1>책 그림섬 프로그램</h1>
+                <div class="contents">
+                    <div class="pro1">
+                        <img src="./images/pro1.jfif" alt="">
+                        <div class="txt">
+                            <h2>새나라의 어린이</h2>
+                            <p>-기간:2024. 8. 17.(토) ~ 2025. 4. 14.(일)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -239,7 +324,13 @@
             $(this).siblings().stop().slideDown(300);
             $(this).parent().siblings().find(".sub-navi").slideUp();
         })
-        
+         $(".tab li").click(function(){
+            const i = $(this).index();
+            $(".tab li").css("border-bottom", "7px solid #d9d9d9");
+            $(".tab li").eq(i).css("border-bottom", "7px solid #000");
+            $(".a").hide();
+            $(".a").eq(i).show();
+         })
         
     </script>
 </body>
