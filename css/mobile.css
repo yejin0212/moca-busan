@@ -661,23 +661,38 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section6 .wrap .infoTab li:nth-child(1){
     margin-left: 0;
 }
-.section6 .wrap .tabTxt1{
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+.section6 .wrap .tabTxt1,
+.section6 .wrap .tabTxt2,
+.section6 .wrap .tabTxt3{
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20px;
 }
-.section6 .wrap .tabTxt1 li{
+.section6 .wrap .tabTxt2,
+.section6 .wrap .tabTxt3{
+    display: none;
+}
+.section6 .wrap .tabTxt1 li,
+.section6 .wrap .tabTxt2 li,
+.section6 .wrap .tabTxt3 li{
     border-bottom: 1px solid #000;
     padding: 10px;
 }
-.section6 .wrap .tabTxt1 li:nth-child(3){
+.section6 .wrap .tabTxt1 li:nth-child(3),
+.section6 .wrap .tabTxt2 li:nth-child(3),
+.section6 .wrap .tabTxt3 li:nth-child(3){
     border-bottom: 0;
 }
-.section6 .wrap .tabTxt1 li p:nth-child(1){
+.section6 .wrap .tabTxt1 li p:nth-child(1),
+.section6 .wrap .tabTxt2 li p:nth-child(1),
+.section6 .wrap .tabTxt3 li p:nth-child(1){
     font-weight: bold;
     margin-bottom: 3px;
 }
-.section6 .wrap .tabTxt1 li p:nth-child(2){
+.section6 .wrap .tabTxt1 li p:nth-child(2),
+.section6 .wrap .tabTxt2 li p:nth-child(2),
+.section6 .wrap .tabTxt3 li p:nth-child(2){
     font-size: 16px;
 }
