@@ -263,71 +263,97 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section1{
     padding: 20px 16px;
 }
-.section1 .wrap{}
+.section1 .wrap{
+    position: relative;
+}
 .section1 .wrap h1{
     font-size: 24px;
     font-weight: bolder;
     margin-bottom: 20px;
 }
-.section1 .wrap .thumb{
-    position: relative;
+.section1 .wrap .arrow{
 }
-.section1 .wrap .thumb img{
-    width: 70%;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    
+.section1 .wrap .arrow button{
 }
-.section1 .wrap .thumb .arrow{
-    background-color: pink;
-}
-.section1 .wrap .thumb .arrow button{}
-.section1 .wrap .thumb .arrow button .arrow-prev{}
-.section1 .wrap .thumb .arrow button .arrow-prev::after{
+.section1 .wrap .arrow button .arrow-prev{}
+.section1 .wrap .arrow button .arrow-prev::after{
     position: absolute;
     left: 0; 
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(-30%);
     content: '';
     width: 35px; 
     height: 35px;
     border-top: 3px solid #000; 
     border-right: 3px solid #000; 
-    transform: rotate(225deg)
+    transform: rotate(225deg);
+    cursor: pointer;
+    background-color: yellow;
 }
-.section1 .wrap .thumb .arrow button .arrow-next{}
-.section1 .wrap .thumb .arrow button .arrow-next::after{
+.section1 .wrap .arrow button .arrow-next{
+}
+.section1 .wrap .arrow button .arrow-next::after{
     position: absolute;
     right: 0; 
-    top: 50%;
-    transform: translateY(-50%);
+    top: 30%;
+    transform: translateY(-30%);
     content: '';
     width: 35px; 
     height: 35px;
     border-bottom: 3px solid #000; 
     border-left: 3px solid #000; 
-    transform: rotate(225deg)
+    transform: rotate(225deg);
+    cursor: pointer;
+    background-color: orange;
+}
+.section1 .wrap .exhibition {}
+.section1 .wrap .exhibition .exhBox{
+    margin: 0 auto;
+}
+.section1 .wrap .exhibition .exh{
+}
+.section1 .wrap .exhibition .exh1{
+    background-color: palegreen;
+}
+.section1 .wrap .exhibition .exh2{
+    background-color: paleturquoise;
+    /* display: none; */
+}
+.section1 .wrap .exhibition .exh3{
+    background-color: palevioletred;
+    /* display: none; */
 }
 
-
-.section1 .wrap .txt{
+.section1 .wrap .exhibition .exh .thumb{
+}
+.section1 .wrap .exhibition .exh .thumb img{
+    width: 70%;
+    border-radius: 12px;
     margin-bottom: 20px;
 }
-.section1 .wrap .txt h2{
+
+.section1 .wrap .exhibition .exh .title{
+    margin-bottom: 20px;
+}
+.section1 .wrap .exhibition .exh .title h2{
     font-size: 20px;
     font-weight: bolder;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.section1 .wrap .con{
+.section1 .wrap .exhibition .exh .con{
     height: 185px;  
     position: relative;
 }
-.section1 .wrap .con .tab{
+.section1 .wrap .exhibition .exh .con .tab{
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
 
 }
-.section1 .wrap .con .tab li{
+.section1 .wrap .exhibition .exh .con .tab li{
     font-size: 18px;
     width: 50%;
     height: 50px;
@@ -337,16 +363,16 @@ header .wrap nav .gnb .navi .sub-navi .list{
     border-bottom: 7px solid #d9d9d9;
     font-weight: bolder;
 }
-.section1 .wrap .con .tab li:nth-child(1){
+.section1 .wrap .exhibition .exh .con .tab li:nth-child(1){
     border-bottom: 7px solid #000;
 }
 
 
-.section1 .wrap .con .txt .information{
+.section1 .wrap .exhibition .exh .con .txt .information{
     display: flex;
     flex-direction: column;
 }
-.section1 .wrap .con .txt .information .info1{
+.section1 .wrap .exhibition .exh .con .txt .information .info1{
 }
 .section1 .wrap .txt .information .info1 h3,
 .section1 .wrap .txt .information .info2 h3,
@@ -356,8 +382,8 @@ header .wrap nav .gnb .navi .sub-navi .list{
     font-weight: bolder;
     font-size: 16px;
 }
-.section1 .wrap .txt .information .info1 P,
-.section1 .wrap .txt .information .info2 P{
+.section1 .wrap .exhibition .exh .txt .information .info1 P,
+.section1 .wrap .exhibition .exh .txt .information .info2 P{
     display: inline-block;
     position: absolute;
     left: 80px;
@@ -365,11 +391,11 @@ header .wrap nav .gnb .navi .sub-navi .list{
     font-size: 16px;
 
 }
-.section1 .wrap .txt .information .info2{
+.section1 .wrap .exhibition .exh .txt .information .info2{
 }
-.section1 .wrap .txt .information .info3{
+.section1 .wrap .exhibition .exh .txt .information .info3{
 }
-.section1 .wrap .txt .information .info3 P{
+.section1 .wrap .exhibition .exh .txt .information .info3 P{
     display: inline-block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -382,19 +408,10 @@ header .wrap nav .gnb .navi .sub-navi .list{
     position: absolute;
     top: 106px;
 }
-/* .wrap .txt .intro1{
-    font-size: 19px;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    -webkit-line-clamp: 5;
-    width: 95%;
-    margin: 0 auto;
-} */
-.section1 .wrap .txt .intro{
+.section1 .wrap .exhibition .exh .txt .intro{
     display: none;
 }
-.section1 .wrap .txt .intro .intro1{
+.section1 .wrap .exhibition .exh .txt .intro .intro1{
     font-size: 15px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -403,6 +420,7 @@ header .wrap nav .gnb .navi .sub-navi .list{
     width: 95%;
     margin: 0 auto;
 }
+
 .section2{
     padding: 20px 0 20px 16px;
 
