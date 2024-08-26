@@ -128,9 +128,11 @@ header .wrap nav .gnb .navi .sub-navi .list{
 }  
 /* header .wrap nav .gnb .navi .sub-navi .list a{
 }   */
-/* .banner{
+.banner{
+    border: 2px solid orange;
+    margin-bottom: 50px;
 }
-*/
+
 .banner .wrap{
     padding: 20px 16px;
 }
@@ -262,6 +264,7 @@ header .wrap nav .gnb .navi .sub-navi .list{
 }
 .section1{
     padding: 20px 16px;
+    border: 2px solid orange;
     
 }
 .section1>.wrap{
@@ -272,8 +275,27 @@ header .wrap nav .gnb .navi .sub-navi .list{
     font-size: 24px;
     font-weight: bolder;
     margin-bottom: 20px;
+    position: relative;
 }
-/* 액자 */
+.section1 .wrap .btn-more{
+    display: inline;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    transform: translateY(-1%);
+    padding-right: 10px;
+}
+.section1 .wrap .btn-more::after{
+    position: absolute;
+    right: 0;
+    top:30%;
+    width: 10px;
+    height:10px;
+    content: '';
+    transform:rotate(225deg);
+    border-bottom: 1px solid #000; 
+    border-left: 1px solid #000; 
+}
 .section1>.wrap>.slide{
     width: 100%;
     height: 100%;
@@ -289,9 +311,9 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section1 .wrap .arrow button .arrow-prev{}
 .section1 .wrap .arrow button .arrow-prev::after{
     position: absolute;
-    left: 5%; 
-    top: 30%;
-    transform: translate(-5%,-30%);
+    left: 0%; 
+    top: 35%;
+    transform: translateY(-35%);
     content: '';
     width: 35px; 
     height: 35px;
@@ -304,9 +326,9 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section1 .wrap .arrow button .arrow-next{}
 .section1 .wrap .arrow button .arrow-next::after{
     position: absolute;
-    right: 5%; 
-    top: 30%;
-    transform: translate(-5%,-30%);
+    right: 0; 
+    top: 35%;
+    transform: translateY(-35%);
     content: '';
     width: 35px; 
     height: 35px;
@@ -316,7 +338,6 @@ header .wrap nav .gnb .navi .sub-navi .list{
     cursor: pointer;
     z-index: 8888;
 }
-/* 슬라이드 띠 */
 .section1 .exhibition{
     display: flex;
     height: 100%;
@@ -325,7 +346,6 @@ header .wrap nav .gnb .navi .sub-navi .list{
     top: 0;
     left: 0;
 }
-/* 각각의 칸 */
 .section1 .exhibition .exh{
     width: 100%;
     height: 100%;
@@ -433,13 +453,35 @@ header .wrap nav .gnb .navi .sub-navi .list{
 
 .section2{
     padding: 20px 0 20px 16px;
-    margin-top: 50px;
+    margin: 50px 0;
+    border: 2px solid orange;
 }
-.section2 .wrap{}
+.section2 .wrap{
+    position: relative;
+}
 .section2 .wrap h1{
     font-size: 24px;
     font-weight: bolder;
     margin-bottom: 20px;
+}
+.section2 .wrap .btn-more{
+    display: inline;
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    transform: translateY(-1%);
+    padding-right: 10px;
+}
+.section2 .wrap .btn-more::after{
+    position: absolute;
+    right: 0;
+    top:30%;
+    width: 10px;
+    height:10px;
+    content: '';
+    transform:rotate(225deg);
+    border-bottom: 1px solid #000; 
+    border-left: 1px solid #000; 
 }
 .section2 .wrap .slide{
     display: flex;
@@ -475,7 +517,7 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section3{
     margin: 50px 0;
     width: 100%;
-    
+    border: 2px solid orange;
 }
 .section3 .wrap{
     height:150px;
@@ -488,18 +530,21 @@ header .wrap nav .gnb .navi .sub-navi .list{
     align-items: center;
     justify-content: center;
     text-align: center;
+    
 }
 .section3 .wrap a{
 }
 .section3 .wrap h1{
     color: #fff;
     font-size: 14px;
-    font-weight: 100;
+    font-weight:300;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .section3 .wrap h2{
     color: #fff;
     font-size: 25px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-bottom: 15px;
 }
 .section3 .wrap p{
@@ -513,37 +558,50 @@ header .wrap nav .gnb .navi .sub-navi .list{
     align-items: center;
     margin-top: 8px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
     margin: 0 auto;
+    margin-bottom: 20px;
 }
 .section4{
     padding: 20px 16px;
+    position: relative;
+    border: 2px solid orange;
+    margin-bottom: 50px;
 }
-.section4 .wrap{}
+.section4 .wrap{
+    position: relative;
+}
 .section4 .wrap h1{
     font-size: 24px;
     font-weight: bolder;
     margin-bottom: 20px;
 }
-/* 액자 */
-.section4 .wrap .slide{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin:0 auto;
-    overflow: hidden;
-}
-.section4 .wrap .slide .arrow{
-}
-.section4 .wrap .slid .arrow button{
-}
-.section4 .wrap .slide .arrow button .arrow-prev{
-}
-.section4 .wrap .slide .arrow button .arrow-prev::after{
+.section4 .wrap .btn-more{
+    display: inline;
     position: absolute;
-    left: 0; 
-    top: 40%;
-    transform: translateY(-40%);
+    top: 1%;
+    right: 0;
+    transform: translateY(-1%);
+    padding-right: 10px;
+}
+.section4 .wrap .btn-more::after{
+    position: absolute;
+    right: 0;
+    top:30%;
+    width: 10px;
+    height:10px;
+    content: '';
+    transform:rotate(225deg);
+    border-bottom: 1px solid #000; 
+    border-left: 1px solid #000; 
+}
+.section4 .wrap .arrow button .arrow-prev{
+}
+.section4 .wrap .arrow button .arrow-prev::after{
+    position: absolute;
+    left: 5%; 
+    top: 45%;
+    transform: translate(-5%,-45%);
     content: '';
     width:25px; 
     height: 25px;
@@ -553,13 +611,13 @@ header .wrap nav .gnb .navi .sub-navi .list{
     cursor: pointer;
 
 }
-.section4 .wrap .slide .arrow button .arrow-next{
+.section4 .wrap .arrow button .arrow-next{
 }
-.section4 .wrap .slide .arrow button .arrow-next::after{
+.section4 .wrap .arrow button .arrow-next::after{
     position: absolute;
-    right: 0; 
-    top: 40%;
-    transform: translateY(-40%);
+    right: 5%; 
+    top: 45%;
+    transform: translateY(-5%,-45%);
     content: '';
     width: 25px; 
     height: 25px;
@@ -568,7 +626,18 @@ header .wrap nav .gnb .navi .sub-navi .list{
     transform: rotate(225deg);
     cursor: pointer;
 }
-/* 슬라이드 띠 */
+
+.section4 .wrap .slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+    overflow: hidden;
+}
+.section4 .wrap .arrow{
+}
+.section4 .wrap .arrow button{
+}
 .section4 .wrap .slide .contents{
     display: flex;
     justify-content: center;
@@ -579,7 +648,7 @@ header .wrap nav .gnb .navi .sub-navi .list{
     left: 0;
     /* overflow: hidden; */
 }
-/* 각각의 칸 */
+
 .section4 .wrap .slide .contents .pro{
     width: 75%;
     height: 100%;
@@ -612,31 +681,67 @@ header .wrap nav .gnb .navi .sub-navi .list{
     font-size: 13px;
     text-align: center;
 }
+.section4 .wrap .dots{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.section4 .wrap .dots div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:#b2b2b2 ;
+}
 .section5{
     padding: 20px 16px;
-    margin-top: 30px;
+   margin-bottom: 50px;
+    position: relative;
+    border: 2px solid orange;
 }
-.section5 .wrap{}
+.section5 .wrap{
+    position: relative;
+}
 .section5 .wrap h1{
     font-size: 24px;
     font-weight: bolder;
 }
-/* 액자 */
+.section5 .wrap .btn-more{
+    display: inline;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    transform: translateY(-1%);
+    padding-right: 10px;
+}
+.section5 .wrap .btn-more::after{
+    position: absolute;
+    right: 0;
+    top:30%;
+    width: 10px;
+    height:10px;
+    content: '';
+    transform:rotate(225deg);
+    border-bottom: 1px solid #000; 
+    border-left: 1px solid #000; 
+}
 .section5 .wrap .contents{
     position: relative;
-    width: 100%;
+    width: 80%;
     height: 100%;
-    /* overflow:hidden; */
+    overflow:hidden;
     margin: 0 auto;
+
 }
 .section5 .wrap .arrow{}
 .section5 .wrap .arrow button{}
-.section5 .wrap .arrow button .arrow-prev{}
+.section5 .wrap .arrow button .arrow-prev{
+}
 .section5 .wrap .arrow button .arrow-prev::after{
     position: absolute;
-    left: 0; 
-    top: 50%;
-    transform: translateY(-50%);
+    left: 5%; 
+    top: 55%;
+    transform: translate(-5%,-55%);
     content: '';
     width:25px; 
     height: 25px;
@@ -648,9 +753,9 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section5 .wrap .arrow button .arrow-next{}
 .section5 .wrap .arrow button .arrow-next::after{
     position: absolute;
-    right: 0; 
-    top: 50%;
-    transform: translateY(-50%);
+    right:5%; 
+    top: 55%;
+    transform: translate(-5%,-55%);
     content: '';
     width: 25px; 
     height: 25px;
@@ -659,22 +764,24 @@ header .wrap nav .gnb .navi .sub-navi .list{
     transform: rotate(225deg);
    
 }
-/* 띠 */
+
 .section5 .wrap .con{
     display: flex;
     height: 100%;
-    width: 300%;
-    /* position: absolute;
+    width: 400%;
+    justify-content: center;
+    align-items: center;
     top: 0;
-    left: 0; */
+    left: 0;
+    /* padding: 10%; */
+    margin: 0 auto;
+    /* background-color: red; */
 }
 .section5 .wrap .con .cont{
-    background-color: yellow;
+    /* background-color: yellow; */
     position: relative;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    
 }
 .section5 .wrap .con .cont::after{
     content: '';
@@ -685,33 +792,69 @@ header .wrap nav .gnb .navi .sub-navi .list{
     position: absolute;    
     top: 0;
     left: 0;
+    margin: 0 auto;
+
 }
 .section5 .wrap .con .cont img{
     width: 100%;
 }
 .section5 .wrap .con .cont .txt{
     position: absolute;
-    top: 60%;
+    top: 90%;
+    left: 50%;
     z-index: 9999;
     width: 90%;
-    left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-90%);
 }
 .section5 .wrap .con .cont .txt h2{
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
     margin-bottom: 8px;
     
 }
 .section5 .wrap .con .cont .txt p{
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
+}
+.section5 .wrap .dots{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.section5 .wrap .dots div{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color:#b2b2b2 ;
 }
 .section6{
     padding: 20px 16px;
+    border: 2px solid orange;
 }
-.section6 .wrap{}
+.section6 .wrap{
+    position: relative;
+}
+.section1 .wrap .btn-more{
+    display: inline;
+    position: absolute;
+    top: 1%;
+    right: 0;
+    transform: translateY(-1%);
+    padding-right: 10px;
+}
+.section1 .wrap .btn-more::after{
+    position: absolute;
+    right: 0;
+    top:30%;
+    width: 10px;
+    height:10px;
+    content: '';
+    transform:rotate(225deg);
+    border-bottom: 1px solid #000; 
+    border-left: 1px solid #000; 
+}
 .section6 .wrap .infoTab{
     display: flex;
 }
