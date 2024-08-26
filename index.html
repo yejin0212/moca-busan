@@ -177,21 +177,21 @@
         <div class="section1">
             <div class="wrap">
                 <h1>전시</h1>
-                <div class="slide">
+                <div class="slide"><!--액자-->
                     <div class="arrow">
                         <button>
                             <span class="arrow-prev"></span>
                             <span class="arrow-next"></span>
                         </button>
                     </div>
-                    <div class="exhibition">
+                    <div class="exhibition"> <!--슬라이드 띠-->
                         <div class="exh exh1">
                             <div class="thumb">
                                 <img src="./images/section1 img.jfif" alt="">     
                             </div>
                             <div class="title">
                                 <h2>
-                                    포스트모던 어린이 [2부]: 까다로운 어린이를 위해 특별한 음식을 준비하지 마세요 
+                                    포스트모던 어린이 [2부]
                                 </h2>
                             </div>
                             <div class="con"> 
@@ -370,18 +370,41 @@
         <div class="section4">
             <div class="wrap">
                 <h1>책 그림섬 프로그램</h1>
-                <div class="contents">
+                <div class="slide">
                     <div class="arrow">
                         <button>
                             <span class="arrow-prev"></span>
                             <span class="arrow-next"></span>
                         </button>
                     </div>
-                    <div class="pro1">
-                        <img src="./images/pro_1" alt="">
-                        <div class="txt">
-                            <h2>새나라의 어린이</h2>
-                            <p>-기간:2024. 8. 17.(토) ~ 2025. 4. 14.(일)</p>
+                    <div class="contents">
+                        <div class="pro">
+                            <img src="./images/pro_1" alt="">
+                            <div class="txt">
+                                <h2>새나라의 어린이</h2>
+                                <p>-기간:2024. 8. 17.(토) ~ 2025. 4. 14.(일)</p>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <img src="./images/pro_2" alt="">
+                            <div class="txt">
+                                <h2>〈관종이란 숲 속에는〉</h2>
+                                <p>-기간:2024. 3. 16.(토) ~ 2024. 7. 7.(일)</p>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <img src="./images/pro_3.png" alt="">
+                            <div class="txt">
+                                <h2>〈80억 개의 우주></h2>
+                                <p>-기간:2023. 5. 5.() ~ 2023. 8. 27.(일)</p>
+                            </div>
+                        </div>
+                        <div class="pro">
+                            <img src="./images/pro_4" alt="">
+                            <div class="txt">
+                                <h2>〈우리는 모두 어린이였다></h2>
+                                <p>-기간:2022. 12. 17.(토) ~ 2023. 4. 23.(일)</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -398,11 +421,32 @@
                         </button>
                     </div>
                     <div class="con">
-                        <div class="con1">
+                        <div class="cont">
                             <img src="images/edu_1" alt="">
                             <div class="txt">
                                 <h2>[ 2024 청소년 진로 탐색 프로그램 〈부산모카 반짝〉]</h2>
                                 <p>-기간:2024. 6. 14.(금) ~ 2024. 11. 1.(금)</p>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <img src="images/edu_2" alt="">
+                            <div class="txt">
+                                <h2>[미술관 밖 프로젝트] #_만나는 손과 손: 수평적 감각</h2>
+                                <p>-기간:2024. 9. 29.(일) ~ 2024. 9. 29.(일)</p>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <img src="images/edu_3" alt="">
+                            <div class="txt">
+                                <h2>[미술관 밖 프로젝트] #_멀지만 가까운, 가깝지만 먼</h2>
+                                <p>-기간:2024. 6. 25(금) ~ 2024. 10.20.(금)</p>
+                            </div>
+                        </div>
+                        <div class="cont">
+                            <img src="images/edu_4" alt="">
+                            <div class="txt">
+                                <h2>[미술관 밖 프로젝트] #_소리보기, 읽기, 조합하기</h2>
+                                <p>-기간:2024. 7. 6.(금) ~ 2024. 9. 29.(금)</p>
                             </div>
                         </div>
                     </div>
@@ -501,21 +545,47 @@
             $(".c").hide();
             $(".c").eq(i).show();
          })
+
         //  section1(전시) 슬라이드
-        //  let init = 0;
-        //  const count = $(".exh").length;
-        //  $(".arrow-next").on("click", function(){
-        //     init++;
-        //     let j = init % count;
-        //     $(".exhBox .exh").eq(j-1).fadeOut();
-        //     $(".exhBox .exh").eq(j).fadeIn();
-        //  })
-        // $(".arrow-next").on("click", function(){
-        //     $(".exhibition").animate({left:"-100px"})
-        // })
-        $(".arrow-next").on("click", function(){
-            $(".exhibition").children().animate({left:"300px"},1000);
+        const slideLen = $(".exhibition .exh").length;
+        const slideWidth = $(".section1>.wrap>.slide").width();
+        const totalWidth = slideLen * slideWidth;
+        $(".exh").width(totalWidth);
+        // $(".exh").css("marginLeft", -slideWidth)
+        // $(".exh:last-child").prependTo(".exhibition")
+        $(".section1 .arrow-next").on("click",function(){
+            $(".exhibition").stop().animate({
+                left:-slideWidth },function(){
+                    $(".exhibition").css("left", 0);
+                    $(".exh:first-child").appendTo(".exhibition");
+                })
         })
+
+        $(".section1 .arrow-prev").on("click",function(){
+            $(".exhibition").stop().animate({
+                left:slideWidth },function(){
+                    $(".exhibition").css("left", 0);
+                    $(".exh:last-child").prependTo(".exhibition");
+                })
+        })
+
+        //section4 슬라이드
+        $(".section4 .arrow-next").on("click",function(){
+            $(".section4 .contents").stop().animate({
+                left:-slideWidth },function(){
+                    $(".section4 .contents").css("left", 0);
+                    $(".pro:first-child").appendTo(".section4 .contents");
+                })
+        })
+
+        $(".arrow-prev").on("click",function(){
+            $(".section4 .contents").stop().animate({
+                left:slideWidth },function(){
+                    $(".section4 .contents").css("left", 0);
+                    $(".pro:last-child").prependTo(".section4 .contents");
+                })
+        })
+        
          //section6(공지사항) tab
          $(".infoTab li").click(function(){
             const d = $(this).index();
