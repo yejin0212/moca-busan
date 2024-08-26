@@ -14,6 +14,7 @@ header .wrap{
     justify-content:space-between;
     align-items: center;
     position: relative;
+    background-color: pink;
 }
 header .wrap h1{
     position: absolute;
@@ -53,10 +54,10 @@ header .wrap .btn-open{
     top: 50%;
     transform: translateY(-50%);
     
-} 
-/* header .wrap .btn-open button{}  */
-header .wrap .btn-open button img{
-    height: 33px;
+}  
+header .wrap .btn-open button {
+    /* height: 33px; */
+    position: relative;
 }
 header .wrap nav{
     position: fixed;
@@ -64,7 +65,9 @@ header .wrap nav{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: orange;
+    display: none;
+
 }  
 header .wrap nav .top{
     height: 60px;
@@ -710,27 +713,33 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section5{
     padding: 20px 16px;
    margin-bottom: 50px;
-    position: relative;
+    /* position: relative; */
     border: 2px solid orange;
 }
 .section5 .wrap{
-    position: relative;
+    /* position: relative; */
 }
 .section5 .wrap h2{
     font-size: 24px;
     font-weight: bolder;
     margin-bottom: 20px;
 }
+.section5 .wrap .swiper{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
 .section5 .wrap .btn-more{
-    display: inline;
+    /* display: inline;
     position: absolute;
     top: 1%;
     right: 0;
     transform: translateY(-1%);
-    padding-right: 10px;
+    padding-right: 10px; */
 }
 .section5 .wrap .btn-more::after{
-    position: absolute;
+    /* position: absolute;
     right: 0;
     top:30%;
     width: 10px;
@@ -738,68 +747,43 @@ header .wrap nav .gnb .navi .sub-navi .list{
     content: '';
     transform:rotate(225deg);
     border-bottom: 1px solid #000; 
-    border-left: 1px solid #000; 
+    border-left: 1px solid #000;  */
 }
 .section5 .wrap .contents{
-    position: relative;
+    /* position: relative;
     width: 80%;
-    height: 100%;
+    height: 100%; */
     overflow:hidden;
     margin: 0 auto;
 
 }
-.section5 .wrap .arrow{}
-.section5 .wrap .arrow button{}
-.section5 .wrap .arrow button .arrow-prev{
-}
-.section5 .wrap .arrow button .arrow-prev::after{
-    position: absolute;
-    left: 0; 
-    top: 55%;
-    transform: translateY(-55%);
-    content: '';
-    width:25px; 
-    height: 25px;
-    border-top: 3px solid #000; 
-    border-right: 3px solid #000; 
-    transform: rotate(225deg);
-   
-}
-.section5 .wrap .arrow button .arrow-next{}
-.section5 .wrap .arrow button .arrow-next::after{
-    position: absolute;
-    right:0; 
-    top: 55%;
-    transform: translateY(-55%);
-    content: '';
-    width: 25px; 
-    height: 25px;
-    border-bottom: 3px solid #000; 
-    border-left: 3px solid #000; 
-    transform: rotate(225deg);
-   
-}
+.section5 .wrap .swiper-slide{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 
+}
 .section5 .wrap .con{
-    display: flex;
+    /* display: flex;
     height: 100%;
     width: 400%;
     justify-content: center;
     align-items: center;
     top: 0;
-    left: 0;
+    left: 0; */
     /* padding: 10%; */
     margin: 0 auto;
     /* background-color: red; */
 }
 .section5 .wrap .con .cont{
     /* background-color: yellow; */
-    position: relative;
+    /* position: relative;
     width: 100%;
-    height: 100%;
+    height: 100%; */
 }
 .section5 .wrap .con .cont::after{
-    content: '';
+    /* content: '';
     display: block;
     width: 100%;
     height: 100%;
@@ -807,7 +791,7 @@ header .wrap nav .gnb .navi .sub-navi .list{
     position: absolute;    
     top: 0;
     left: 0;
-    margin: 0 auto;
+    margin: 0 auto; */
 
 }
 .section5 .wrap .con .cont a{}
@@ -815,12 +799,12 @@ header .wrap nav .gnb .navi .sub-navi .list{
     width: 100%;
 }
 .section5 .wrap .con .cont .txt{
-    position: absolute;
+    /* position: absolute;
     top: 90%;
     left: 50%;
     z-index: 9999;
     width: 90%;
-    transform: translate(-50%,-90%);
+    transform: translate(-50%,-90%); */
 }
 .section5 .wrap .con .cont .txt h3{
     font-size: 16px;
@@ -833,23 +817,7 @@ header .wrap nav .gnb .navi .sub-navi .list{
     font-size: 14px;
     font-weight: bold;
 }
-.section5 .wrap .dots{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-.section5 .wrap .dots button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.section5 .wrap .dots div{
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color:#b2b2b2 ;
-}
+
 .section6{
     padding: 20px 16px;
     border: 2px solid orange;
