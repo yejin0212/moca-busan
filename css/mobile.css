@@ -862,11 +862,12 @@ header .wrap nav .gnb .navi .sub-navi .list{
     font-weight: bolder;
     font-size: 18px;
     margin-left: 14px;
-    color: #757575;
+    color: #d9d9d9;
     margin-bottom: 10px;
 }
 .section6 .wrap .infoTab li:nth-child(1){
     margin-left: 0;
+    color:#000;
 }
 .section6 .wrap .tabTxt1,
 .section6 .wrap .tabTxt2,
