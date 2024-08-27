@@ -809,9 +809,10 @@ header .wrap nav .gnb .navi .sub-navi .list{
     left: 0;
     margin: 0 auto;
 
+
 }
 .section5 .wrap .con .cont:nth-child(4) img{
-    height: 30%;
+    height: 20%;
 }
 .section5 .wrap .con .cont a{
 }
@@ -820,17 +821,19 @@ header .wrap nav .gnb .navi .sub-navi .list{
     height: 100%;
 }
 .section5 .wrap .con .cont .txt{
-    /* position: absolute;
+    position: absolute;
     top: 90%;
     left: 50%;
     z-index: 9999;
     width: 90%;
-    transform: translate(-50%,-90%); */
+    transform: translate(-50%,-90%);
+    color: blueviolet;
 }
 .section5 .wrap .con .cont .txt h3{
     font-size: 16px;
     color: #fff;
     margin-bottom: 8px;
+    z-index: 9999;
     
 }
 .section5 .wrap .con .cont .txt p{
