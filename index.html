@@ -24,13 +24,16 @@
                 <div class="head">
                     <div class="lang"><a href="#">ENG</a></div>
                     <div class="btn-search"><button type="button"><a href="#"><img src="./images/search.icon.png" alt=""></a></button></div>
-                    <div class="btn-open"><button type="button"><img src="./images/open.icon.png" alt=""></button></div>
+                    <div class="open">
+                        <div class="btn-open">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
                 </div>
                 <nav>
-                    <div class="top">
-                        <div class="logo"></div>
-                        <div class="btn-cls"><button type="button"><img src="./images/close.icon.png" alt=""></button></div>
-                    </div>
+                    <!-- <div class="btn-cls"><button type="button"><img src="./images/close.icon.png" alt=""></button></div> -->
                     <div class="gnb">
                         <div class="navi">
                             <div class="tit">
@@ -568,17 +571,38 @@
     <script src="./jquery/jquery-3.7.1.min.js"></script>
     <script src="./jquery/jquery-ui.js"></script>
     <script>
-        const $nav = document.querySelector("nav");
-        const $opn = document.querySelector(".btn-open");
-        const $cls = document.querySelector(".btn-cls");
+        // const $nav = document.querySelector("nav");
+        // const $opn = document.querySelector(".btn-open");
+        // const $cls = document.querySelector(".btn-cls");
     
-        $opn.addEventListener("click", () =>{
-            $nav.style.left = 0;
+        // $opn.addEventListener("click", () =>{
+        //     $nav.style.topt = 0;
+        // });
+        // $cls.addEventListener("click", () =>{
+        //     $nav.style.top = "-100%";
+        // });
+
+        const $opn = document.querySelector(".btn-open");
+        const $nav = document.querySelector(".gnb");
+            $opn.addEventListener("click", () => {
+            $nav.style.left = "-100%"
+        })
+
+
+
+
+        //오픈버튼 닫기로 바꾸기
+        const menu = document.querySelector('.btn-open');
+
+        menu.addEventListener('click',function(){
+        if(menu.classList.contains('open')){
+            menu.classList.remove('open');
+        }else{
+            menu.classList.add('open');
+        }
+
         });
-        $cls.addEventListener("click", () =>{
-            $nav.style.left = "-100%";
-        });
-        //nav
+        
         $(".navi .tit").on("click", function(){
             $(".navi .tit").css("border-bottom", "1px solid #000");
             $(".navi .tit button").css("color", "#000");
