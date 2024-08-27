@@ -719,7 +719,9 @@ header .wrap nav .gnb .navi .sub-navi .list{
     border: 2px solid orange;
 }
 .section5 .wrap{
-    /* position: relative; */
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 .section5 .wrap h2{
     font-size: 24px;
@@ -732,16 +734,25 @@ header .wrap nav .gnb .navi .sub-navi .list{
     margin-left: auto;
     margin-right: auto;
 }
+.section5 .swiper-button-next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.section5 .swiper-button-prev{
+}
 .section5 .wrap .btn-more{
-    /* display: inline;
+    display: inline;
     position: absolute;
     top: 1%;
     right: 0;
     transform: translateY(-1%);
-    padding-right: 10px; */
+    padding-right: 10px;
+    background-color: yellow;
 }
 .section5 .wrap .btn-more::after{
-    /* position: absolute;
+    position: absolute;
     right: 0;
     top:30%;
     width: 10px;
@@ -749,21 +760,22 @@ header .wrap nav .gnb .navi .sub-navi .list{
     content: '';
     transform:rotate(225deg);
     border-bottom: 1px solid #000; 
-    border-left: 1px solid #000;  */
+    border-left: 1px solid #000; 
 }
 .section5 .wrap .contents{
-    /* position: relative;
-    width: 80%;
-    height: 100%; */
+    position: relative;
+    width: 75%;
+    height: 75%;
     overflow:hidden;
     margin: 0 auto;
+    border: 1px solid salmon;
 
 }
 .section5 .wrap .swiper-slide{
-    display: block;
+    /* display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
 
 }
 .section5 .wrap .con{
@@ -779,26 +791,33 @@ header .wrap nav .gnb .navi .sub-navi .list{
     /* background-color: red; */
 }
 .section5 .wrap .con .cont{
-    /* background-color: yellow; */
-    /* position: relative;
-    width: 100%;
-    height: 100%; */
+    border: 2px solid slateblue;
+    position: relative;
+    width: 75%;
+    height: 80%;
+    display: block;
+    object-fit: cover;
 }
 .section5 .wrap .con .cont::after{
-    /* content: '';
+    content: '';
     display: block;
     width: 100%;
-    height: 100%;
+    height: 75%;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0,0,0,0.6));
     position: absolute;    
     top: 0;
     left: 0;
-    margin: 0 auto; */
+    margin: 0 auto;
 
 }
-.section5 .wrap .con .cont a{}
+.section5 .wrap .con .cont:nth-child(4) img{
+    height: 30%;
+}
+.section5 .wrap .con .cont a{
+}
 .section5 .wrap .con .cont img{
     width: 100%;
+    height: 100%;
 }
 .section5 .wrap .con .cont .txt{
     /* position: absolute;
