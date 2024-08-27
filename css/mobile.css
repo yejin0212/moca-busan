@@ -8,13 +8,16 @@ header{
     z-index: 99999;
 }
 header .wrap{
+    width: 100%;
     height: 58px;
     border-bottom:1px solid #000 ;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    position: relative;
     background-color: pink;
+    position: fixed;
+    top: 0;
+    right: 0;
 }
 header .wrap h1{
     position: absolute;
@@ -59,14 +62,17 @@ header .wrap .btn-open button {
     /* height: 33px; */
     position: relative;
 }
+header .wrap .btn-open button img{
+    width: 50%;
+}
 header .wrap nav{
-    position: fixed;
-    top: 0;
+    position: absolute;
+    top: 58px;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: orange;
-    display: none;
+   
 
 }  
 header .wrap nav .top{
