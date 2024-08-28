@@ -14,10 +14,10 @@ header .wrap{
     display: flex;
     justify-content:space-between;
     align-items: center;
-    background-color: pink;
     position: fixed;
     top: 0;
     right: 0;
+    background-color: #fff;
 }
 header .wrap h1{
     position: absolute;
@@ -99,55 +99,68 @@ header .wrap .btn-search button img{
   transform: rotate(-45deg) translateX(10%);
 }
 
-header .wrap .gnb{
-    background-color: paleturquoise;
-    position: absolute;
-    top: 58px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-header .wrap nav{
-    position: absolute;
-    top: 58px;
-    left: 0;
-    width: 100%;
-    height: 100%;
+/* header .wrap nav{
     background-color:yellowgreen;
-    display: none;
-
-}  
-header .wrap nav .top{
-    height: 60px;
+    overflow:hidden scroll;
+    position: fixed;
+    top: 0px;
+    left: 0;
+}  */
+header .wrap .gnb{
+    background-color: #fff;
+    position: fixed;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #000;
+    flex-direction: column;
+    z-index: 99999;
+    overflow: scroll;
+    
 }
-header .wrap nav .top .logo{
-    font-weight:bolder;
-    font-family: sans-serif;
-    margin-left: 15px;
-    font-size: 25px;
-}  
-header .wrap nav .btn-cls{
-    margin-right: 15px;
-}  
-header .wrap nav .btn-cls img{
-    height: 33px;
-}  
-/* header .wrap nav .gnb{}  
-header .wrap nav .gnb .navi{}   */
-header .wrap nav .gnb .navi .tit{
+header .gnb .icon{
+    display: flex;
+    padding: 20px;
+    margin: 0 auto;
+    border-bottom: 1px solid #a7a7a7;
+    margin-bottom: 15px;
+}
+header .gnb .navi-ico{
+    margin-right: 30px;
+}
+header .gnb .navi-ico button{
+}
+header .gnb .navi-ico button a{
+}
+header .gnb .navi-ico button a span{
+    border: 2px solid #a7a7a7;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    display: inline-block;
+    padding-top: 11px;
+    border-radius: 10px;
+    color: #757575;
+    margin-bottom: 1px;
+}
+header .gnb .navi-ico button a p{
+    font-weight: bold;
+}
+header .wrap .gnb .navi{
+}
+header .wrap .gnb .navi .tit{
     position: relative;
     height: 54px;
     border-bottom: 1px solid #a7a7a7;
     display: flex;
     align-items: center;
+    background-color: #fff;
 }  
-header .wrap nav .gnb .navi:hover .tit::after{
+header .wrap .gnb .navi:hover .tit::after{
     transform: translateY(-50%) rotate(-45deg);
 }
-header .wrap nav .gnb .navi .tit::after{
+header .wrap .gnb .navi .tit::after{
     content: '';
     display: block;
     width: 8px;
@@ -159,17 +172,36 @@ header .wrap nav .gnb .navi .tit::after{
     right: 20px;
     top: 50%;
 }
-header .wrap nav .gnb .navi .tit button{
+header .wrap .gnb .navi .tit button{
     font-size: 21px;
     font-weight: bolder;
     margin-left: 15px;
 }  
-header .wrap nav .gnb .navi .sub-navi{
+header .wrap .gnb .navi:last-child{
+    border: 2px solid #000;
+    padding: 5px;
+    border-radius: 40px;
+    width: 70%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 30px auto;
+    
+}
+header .wrap .gnb .navi:last-child button{
+}
+header .wrap .gnb .navi:last-child button a{
+    font-size: 21px;
+    font-weight: bolder;
+}
+header .wrap .gnb .navi .sub-navi{
     background-color: #f0f1f6;
     display: none;
     width: 100%;
 }  
-header .wrap nav .gnb .navi .sub-navi .list{
+header .wrap .gnb .navi .sub-navi .list{
     font-size: 18px;
     padding-top: 10px ;
     padding-bottom:10px ;
@@ -178,9 +210,11 @@ header .wrap nav .gnb .navi .sub-navi .list{
 }  
 /* header .wrap nav .gnb .navi .sub-navi .list a{
 }   */
+
+
 .banner{
-    border: 2px solid orange;
     margin-bottom: 50px;
+    margin-top: 58px;
 }
 
 .banner .wrap{
@@ -314,9 +348,9 @@ header .wrap nav .gnb .navi .sub-navi .list{
 }
 .section1{
     padding: 20px 16px;
-    border: 2px solid orange;
     position: relative;
     height: 100%;
+    margin-bottom: 50px;
 }
 .section1>.wrap{
     /* position: relative;
@@ -335,9 +369,9 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section1 .wrap .btn-more{
     display: inline;
     position: absolute;
-    top: 1%;
+    top: 4%;
     right: 0;
-    transform: translateY(-1%);
+    transform: translateY(-4%);
     padding-right: 10px;
     margin-right: 10px;
 }
@@ -494,11 +528,54 @@ header .wrap nav .gnb .navi .sub-navi .list{
 }
 .section2{
     padding: 20px 0 20px 16px;
-    margin: 50px 0;
-    border: 2px solid orange;
+    /* margin: 50px 0; */
+    /* overflow: hidden; */
+}
+.section2 .swiper{
+    width: 100%;
+    height: 100%;
+}
+.section2 .wrap .btn_more{
+    display: inline;
+    position: absolute;
+    top: 1%;
+    right: 10px;
+    transform: translateY(-1%);
+    padding-right: 10px;
+}
+.section2 .wrap .btn_more::after{
+    position: absolute;
+    right: 0;
+    top:30%;
+    width: 10px;
+    height:10px;
+    content: '';
+    transform:rotate(225deg);
+    border-bottom: 1px solid #000; 
+    border-left: 1px solid #000; 
+}
+.section2 .btn_more button a{
+    width: 150px;
+}
+.section2 .btn_more button a p{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.section2 .swiper-pagination{
+    /* display: none; */
+}
+.section2 .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    margin-bottom: 50px;
+    margin-top: auto;
 }
 .section2 .wrap{
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 .section2 .wrap h2{
     font-size: 24px;
@@ -526,27 +603,32 @@ header .wrap nav .gnb .navi .sub-navi .list{
 }
 .section2 .wrap .slide{
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .section2 .wrap .slide .collection{
-    display: flex;
+    /* display: flex;
     gap: 10px;
     white-space: nowrap;
     overflow-x: scroll;
     align-items: end;
-    flex-direction: initial;
+    flex-direction: initial; */
 }
 .section2 .wrap .slide .col{
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    
 }
 .section2 .wrap .slide .col a{}
 .section2 .wrap .slide .col a img{
-    object-fit: contain;
+    /* object-fit: contain;
     max-width: 400px;
-    max-height: 400px;
+    max-height: 400px; */
     margin-bottom: 10px;
     border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+/* 
 .section2 .wrap .slide .col a h3{
     font-size: 20px;
     font-weight: bolder;
@@ -554,11 +636,10 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section2 .wrap .slide .col a p{
     font-size: 16px;
     font-weight: bold;
-}
+}*/
 .section3{
     margin: 50px 0;
     width: 100%;
-    border: 2px solid orange;
 }
 .section3 .wrap{
     height:150px;
@@ -586,8 +667,9 @@ header .wrap nav .gnb .navi .sub-navi .list{
     color: #fff;
     font-size: 25px;
     /* margin-top: 5px; */
-    margin-bottom: 15px;
+ margin-bottom: 15px;
 }
+    
 .section3 .wrap p{
     color: #fff;
     border: 2px solid #fff;
@@ -606,7 +688,6 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section4{
     padding: 20px 16px;
     position: relative;
-    border: 2px solid orange;
     margin-bottom: 50px;
 }
 .section4 .wrap{
@@ -716,7 +797,6 @@ header .wrap nav .gnb .navi .sub-navi .list{
     padding: 20px 16px;
    margin-bottom: 50px;
     /* position: relative; */
-    border: 2px solid orange;
 }
 .section5 .wrap{
     position: relative;
@@ -737,10 +817,16 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section5 .swiper-button-next{
     position: absolute;
     right: 0;
-    top: 50%;
-    transform: translateX(-50%);
+    top: 55%;
+    transform: translateY(-55%);
+    color: #000;
 }
 .section5 .swiper-button-prev{
+    position: absolute;
+    left: 0;
+    top: 55%;
+    transform: translateY(-55%);
+    color: #000;
 }
 .section5 .wrap .btn-more{
     display: inline;
@@ -749,7 +835,6 @@ header .wrap nav .gnb .navi .sub-navi .list{
     right: 0;
     transform: translateY(-1%);
     padding-right: 10px;
-    background-color: yellow;
 }
 .section5 .wrap .btn-more::after{
     position: absolute;
@@ -768,14 +853,13 @@ header .wrap nav .gnb .navi .sub-navi .list{
     height: 75%;
     overflow:hidden;
     margin: 0 auto;
-    border: 1px solid salmon;
-
 }
 .section5 .wrap .swiper-slide{
     /* display: block;
     width: 100%;
     height: 100%;
     object-fit: cover; */
+    /* columns:  */
 
 }
 .section5 .wrap .con{
@@ -791,18 +875,18 @@ header .wrap nav .gnb .navi .sub-navi .list{
     /* background-color: red; */
 }
 .section5 .wrap .con .cont{
-    border: 2px solid slateblue;
     position: relative;
     width: 75%;
-    height: 80%;
+    height: 100%;
     display: block;
     object-fit: cover;
+    margin-bottom: 50px;
 }
 .section5 .wrap .con .cont::after{
     content: '';
     display: block;
     width: 100%;
-    height: 75%;
+    height: 100%;
     background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0,0,0,0.6));
     position: absolute;    
     top: 0;
@@ -844,7 +928,6 @@ header .wrap nav .gnb .navi .sub-navi .list{
 
 .section6{
     padding: 20px 16px;
-    border: 2px solid orange;
 }
 .section6 .wrap{
     position: relative;
@@ -885,6 +968,10 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section6 .wrap .infoTab li button:nth-child(1){
     margin-left: 0;
     color:#000;
+}
+.section6 .wrap .infoTab li:nth-child(2) button,
+.section6 .wrap .infoTab li:nth-child(3) button{
+    color: #d9d9d9;
 }
 .section6 .wrap .tabTxt1,
 .section6 .wrap .tabTxt2,
@@ -928,4 +1015,32 @@ header .wrap nav .gnb .navi .sub-navi .list{
 .section6 .wrap .tabTxt2 li p:nth-child(2),
 .section6 .wrap .tabTxt3 li p:nth-child(2){
     font-size: 16px;
+}
+footer{
+    /* background-color: #d9d9d9; */
+    margin-top: 30px;
+    padding-top: 30px;
+    border-top:  0.5px solid #000;
+    padding: 30px 20px;
+}
+footer .copyright-txt{
+}
+footer .copyright-txt p{
+    font-size: 12px;
+}
+footer .footer_icon{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin-right: auto;
+    margin: 20px auto;
+}
+footer .footer_icon li{}
+footer .footer_icon li a{}
+footer .footer_icon li a img{}
+footer .footer_logo{}
+footer .footer_logo a{}
+footer .footer_logo a img{
+    width: 40%;
+    
 }
