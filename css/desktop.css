@@ -1,0 +1,114 @@
+@media (min-width: 1200px) {
+    img.tab{display: none;}
+    img.pc{display: block;}
+    img.m{display: none;}
+
+    
+    header{
+        position: relative;
+        z-index: 99999;
+    }
+    header .wrap{
+        width: 100%;
+        height: 170px;
+        border-bottom:1px solid #000 ;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        position: unset;
+        background-color: #fff;
+    }
+    header .wrap h1{
+        position: absolute;
+        left: 20px;
+    }
+    /* header .wrap h1 a{} */
+    header .wrap h1 a img{
+        height: 37px;
+    }
+    header .wrap .head{
+        display: flex;
+    }
+    header .wrap .lang{
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bolder;
+        position: absolute;
+        right: 100px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    header .wrap .btn-search{
+        display: none;
+    }
+    .open{
+        display: none;
+    }
+    
+    header .wrap .gnb{
+        /* background-color:yellowgreen; */
+        position: unset;
+        left: unset;
+        width: unset;
+        height: unset;
+        flex-direction: row;
+        overflow: unset;        
+    }
+    header .gnb .icon{
+        display: none;
+    }
+    
+    header .wrap .gnb .navi{
+    }
+    header .wrap .gnb .navi .tit{
+        position: relative;
+        height:unset;
+        border-bottom: unset;
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+    }  
+    header .wrap .gnb .navi:hover .tit::after{
+        transform:unset;
+    }
+    header .wrap .gnb .navi .tit::after{
+        display: none;
+    }
+    header .wrap .gnb .navi .tit button{
+        font-size: 21px;
+        font-weight: unset;
+        margin-left: 15px;
+    }  
+    header .wrap .gnb .navi:last-child{
+        border: unset;
+        padding: unset;
+        border-radius: unset;
+        width: unset;
+        height: unset;
+        display:unset;
+        justify-content: unset;
+        align-items: unset;
+        text-align:unset;
+        margin:unset;
+        
+    }
+    header .wrap .gnb .navi:last-child button{
+    }
+    header .wrap .gnb .navi:last-child button a{
+        font-size:unset;
+        font-weight: unset;
+    }
+    header .wrap .gnb .navi .sub-navi{
+        background-color: #f0f1f6;
+        display: none;
+        width: 100%;
+    }  
+    header .wrap .gnb .navi .sub-navi .list{
+        font-size: 18px;
+        padding-top: 10px ;
+        padding-bottom:10px ;
+        padding-left: 40px;
+        font-weight: bolder;
+    }  
+    
+}    

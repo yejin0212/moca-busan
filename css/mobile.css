@@ -52,7 +52,7 @@ header .wrap .btn-search button img{
     height: 33px;
 } 
 .open{
-    display: block;
+    
     position: absolute;
     right: 5%;
     top: -50%;
@@ -112,7 +112,7 @@ header .wrap .gnb{
     top: 58px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 58px);
     display: flex;
     flex-direction: column;
     z-index: 99999;
@@ -120,9 +120,11 @@ header .wrap .gnb{
     
 }
 header .gnb .icon{
+    width: 100%;
     display: flex;
     padding: 20px;
     margin: 0 auto;
+    justify-content: center;
     border-bottom: 1px solid #a7a7a7;
     margin-bottom: 15px;
 }
@@ -360,25 +362,24 @@ header .wrap .gnb .navi .sub-navi .list{
     width: 100%;
     height: 100%;
 }
-.section1 .wrap h2{
+.section1 .wrap .Tit{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section1 .wrap .Tit h2{
     font-size: 24px;
     font-weight: bolder;
-    margin-bottom: 20px;
-    /* position: relative; */
 }
-.section1 .wrap .btn-more{
-    display: inline;
-    position: absolute;
-    top: 4%;
-    right: 0;
-    transform: translateY(-4%);
+.section1 .wrap .Tit .btn-more{
+    position: relative;
     padding-right: 10px;
-    margin-right: 10px;
 }
-.section1 .wrap .btn-more::after{
+.section1 .wrap .Tit .btn-more::after{
     position: absolute;
     right: 0;
-    top:30%;
+    top:5px;
     width: 10px;
     height:10px;
     content: '';
@@ -407,7 +408,7 @@ header .wrap .gnb .navi .sub-navi .list{
     height: 100%;
     object-fit: cover;
 }
-.section1 .swiper-button-next{
+/* .section1 .swiper-button-next{
     position: absolute;
     top: 40%;
     transform: translateY(-40%);
@@ -418,7 +419,7 @@ header .wrap .gnb .navi .sub-navi .list{
     top: 40%;
     transform: translateY(-40%);
     color: #000;
-}
+} */
 .section1 .swiper-pagination{
     /* background-color: palevioletred; */
 }
@@ -526,8 +527,11 @@ header .wrap .gnb .navi .sub-navi .list{
     width: 95%;
     margin: 0 auto;
 }
+.section1 .swiper-pagination-bullet-active{
+    background-color: #000;
+}
 .section2{
-    padding: 20px 0 20px 16px;
+    padding: 20px 16px;
     /* margin: 50px 0; */
     /* overflow: hidden; */
 }
@@ -535,18 +539,25 @@ header .wrap .gnb .navi .sub-navi .list{
     width: 100%;
     height: 100%;
 }
-.section2 .wrap .btn_more{
-    display: inline;
-    position: absolute;
-    top: 1%;
-    right: 10px;
-    transform: translateY(-1%);
+.section2 .wrap .Tit{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section2 .wrap .Tit h2{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.section2 .wrap .Tit .btn_more{
+    position: relative;
     padding-right: 10px;
 }
-.section2 .wrap .btn_more::after{
+
+.section2 .wrap .Tit .btn_more::after{
     position: absolute;
     right: 0;
-    top:30%;
+    top:5px;
     width: 10px;
     height:10px;
     content: '';
@@ -577,11 +588,7 @@ header .wrap .gnb .navi .sub-navi .list{
     width: 100%;
     height: 100%;
 }
-.section2 .wrap h2{
-    font-size: 24px;
-    font-weight: bolder;
-    margin-bottom: 20px;
-}
+
 .section2 .wrap .btn-more{
     display: inline;
     position: absolute;
@@ -627,6 +634,9 @@ header .wrap .gnb .navi .sub-navi .list{
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.section2 .swiper-pagination-bullet-active{
+    background-color: #000;
 }
 /* 
 .section2 .wrap .slide .col a h3{
@@ -693,23 +703,24 @@ header .wrap .gnb .navi .sub-navi .list{
 .section4 .wrap{
     position: relative;
 }
-.section4 .wrap h2{
+.section4 .wrap .Tit{
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.section4 .wrap .Tit .Tit h2{
     font-size: 24px;
     font-weight: bolder;
-    margin-bottom: 20px;
 }
-.section4 .wrap .btn-more{
-    display: inline;
-    position: absolute;
-    top: 1%;
-    right: 0;
-    transform: translateY(-1%);
+.section4 .wrap .Tit .btn-more{
+    position:relative;
     padding-right: 10px;
 }
 .section4 .wrap .btn-more::after{
     position: absolute;
     right: 0;
-    top:30%;
+    top:5px;
     width: 10px;
     height:10px;
     content: '';
@@ -718,10 +729,14 @@ header .wrap .gnb .navi .sub-navi .list{
     border-left: 1px solid #000; 
 }
 .section4 .swiper-button-next{
+    
     position: absolute;
     top: 40%;
     transform: translateY(-40%);
     color: #000;
+}
+.section4 .swiper-button-next::after{
+    font-size: 30px;
 }
 .section4 .swiper-button-prev{
     position: absolute;
@@ -729,7 +744,9 @@ header .wrap .gnb .navi .sub-navi .list{
     transform: translateY(-40%);
     color: #000;
 }
-
+.section4 .swiper-button-prev::after{
+    font-size: 30px;
+}
 .section4 .wrap .slide{
     /* position: relative;
     width: 100%;
@@ -793,6 +810,9 @@ header .wrap .gnb .navi .sub-navi .list{
     text-align: center;
     display: flex;
 }
+.section4 .swiper-pagination-bullet-active{
+    background-color: #000;
+}
 .section5{
     padding: 20px 16px;
    margin-bottom: 50px;
@@ -803,10 +823,30 @@ header .wrap .gnb .navi .sub-navi .list{
     width: 100%;
     height: 100%;
 }
-.section5 .wrap h2{
+.section5 .wrap .Tit{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section5 .wrap .Tit h2{
     font-size: 24px;
     font-weight: bolder;
-    margin-bottom: 20px;
+}
+.section5 .wrap .Tit .btn-more{
+   position: relative;
+   padding-right: 10px;
+}
+.section5 .wrap .Tit .btn-more::after{
+    position: absolute;
+    right: 0;
+    top:5px;
+    width: 10px;
+    height:10px;
+    content: '';
+    transform:rotate(225deg);
+    border-bottom: 1px solid #000; 
+    border-left: 1px solid #000; 
 }
 .section5 .wrap .swiper{
     width: 100%;
@@ -821,6 +861,9 @@ header .wrap .gnb .navi .sub-navi .list{
     transform: translateY(-55%);
     color: #000;
 }
+.section5 .swiper-button-next::after{
+    font-size: 30px;
+}
 .section5 .swiper-button-prev{
     position: absolute;
     left: 0;
@@ -828,24 +871,8 @@ header .wrap .gnb .navi .sub-navi .list{
     transform: translateY(-55%);
     color: #000;
 }
-.section5 .wrap .btn-more{
-    display: inline;
-    position: absolute;
-    top: 1%;
-    right: 0;
-    transform: translateY(-1%);
-    padding-right: 10px;
-}
-.section5 .wrap .btn-more::after{
-    position: absolute;
-    right: 0;
-    top:30%;
-    width: 10px;
-    height:10px;
-    content: '';
-    transform:rotate(225deg);
-    border-bottom: 1px solid #000; 
-    border-left: 1px solid #000; 
+.section5 .swiper-button-prev::after{
+    font-size: 30px;
 }
 .section5 .wrap .contents{
     position: relative;
@@ -925,25 +952,31 @@ header .wrap .gnb .navi .sub-navi .list{
     font-size: 14px;
     font-weight: bold;
 }
-
+.section5 .swiper-pagination-bullet-active{
+    background-color: #000;
+}
 .section6{
     padding: 20px 16px;
 }
 .section6 .wrap{
     position: relative;
 }
+.section6 .wrap .Tit{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+}
 .section6 .wrap .btn-more{
-    display: inline;
-    position: absolute;
-    top: 1%;
-    right: 0;
-    transform: translateY(-1%);
+    position: relative;
     padding-right: 10px;
+    padding-bottom: 10px;
+
 }
 .section6 .wrap .btn-more::after{
     position: absolute;
     right: 0;
-    top:30%;
+    top:5px;
     width: 10px;
     height:10px;
     content: '';
