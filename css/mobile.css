@@ -18,12 +18,18 @@ header .wrap{
     top: 0;
     right: 0;
     background-color: #fff;
+    padding: 0 16px;
+}
+header .headerTop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 header .wrap h1{
-    position: absolute;
+    /* position: absolute;
     left: 20px;
     top: 50;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 }
 /* header .wrap h1 a{} */
 header .wrap h1 a img{
@@ -31,25 +37,28 @@ header .wrap h1 a img{
 }
 header .wrap .head{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
 }
 header .wrap .langE{
     font-size: 16px;
     font-family: sans-serif;
     font-weight: bolder;
-    position: absolute;
+    /* position: absolute;
     right: 100px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
     
 }
 header .wrap .langK a{
     display: none;
 }
 header .wrap .btn-search{
-    position: absolute;
+    /* position: absolute;
     right: 58px;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(-50%); */
 
 }
 /* header .wrap .btn-search button{} */
@@ -57,15 +66,12 @@ header .wrap .btn-search button img{
     height: 33px;
 } 
 .open{
-    
-    position: absolute;
+    /* position: absolute;
     right: 5%;
     top: -50%;
-    transform: translateX(-50%,-5%);
+    transform: translateX(-50%,-5%); */
 }
 .btn-open{
-    margin-top:50px;
-    margin-left:100px;
     position: relative;
     width: 28px;
     height: 16px;
@@ -115,7 +121,7 @@ header .wrap .gnb{
     background-color: #fff;
     position: fixed;
     top: 58px;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: calc(100% - 58px);
     display: flex;

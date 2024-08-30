@@ -1,0 +1,90 @@
+@media(min-width: 1200px){
+    header{
+        position: relative;
+        z-index: 99999;
+        margin-bottom: 50px;
+    }
+    header .wrap{
+        width:unset;
+        height: 170px;
+        border-bottom:unset ;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        position: relative;
+        background-color: unset;
+        margin: 0 auto;
+    }
+    header .wrap .headerTop{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 25px;
+    }
+    header .wrap h1{
+        position: unset;
+        top: 20px;
+        left: 23%;
+        transform: unset;
+    }
+    /* header .wrap h1 a{} */
+    header .wrap h1 a img{
+        height: 60px;
+    }
+    header .wrap .head{
+        display: flex;
+        margin-right: 55px;
+    }
+    header .wrap .lang{
+        display: flex;
+        margin-right: 10px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+    header .wrap .langE{
+        width: 50px;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        position: unset;
+        border: 1px solid #000;
+        text-align: center;
+        transform: unset;
+        border-right: none;
+    }
+    header .wrap .langE:hover{
+        background-color: #000;
+        color: #fff;
+    }
+    header .wrap .langK {
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: bold;
+        position: unset;
+        right: 100px;
+        width: 50px;
+        border: 1px solid #000;
+        text-align: center;
+
+    }
+    header .wrap .langK:hover{
+        background-color: #000;
+        color: #fff;
+    }
+    header .wrap .langK a{
+        display: unset;
+    }
+    header .wrap .btn-search{
+        position: unset;
+        top:unset;    
+        right: 160px;
+        transform: unset;
+    }
+    header .wrap .btn-search button{}
+    header .wrap .btn-search button img{
+        height: 33px;
+    } 
+}

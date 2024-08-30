@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css">
     <link rel="stylesheet" href="./css/pc.css">
     <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/reset.css">
@@ -173,11 +174,11 @@
                         <div class="txt">
                             <div class="tit">
                                 <div class="a">포스트모던 어린이 [1부]: 불안한 어린이를 위해 조용한 자장가를 불러주지 마세요</div>
-                                <div class="b">포스트모던 어린이 [1부]: 불안한 어린이를 위해 조용한 자장가를 불러주지 마세요</div>
+                                <!-- <div class="b">포스트모던 어린이 [1부]: 불안한 어린이를 위해 조용한 자장가를 불러주지 마세요</div> -->
                             </div>
                             <div class="date">
-                                <div class="a"></div>기간 : 2023. 5. 5.(금) ~  2023. 8. 27.(일)
-                                <div class="b"></div>기간 : 2023. 5. 5.(금) ~  2023. 8. 27.(일)
+                                <div class="a">기간 : 2023. 5. 5.(금) ~  2023. 8. 27.(일)</div>
+                                <div class="b">기간 : 2023. 5. 5.(금) ~  2023. 8. 27.(일)</div>
                             </div>
                         </div>
                     </div>
@@ -863,22 +864,7 @@
                 }); 
         }
         const NavDesktop = function() {
-            $(".navi .tit").mouseover(function(){
-                $(".navi .tit").css("font-weight", "unset");
-                $(".navi .tit").css("border-bottom", "unset");
-                $(this).children().css("color", "#0093cf");
-                $(this).css("font-weight", "bolder");
-                $(this).siblings().stop().slideDown(300);
-                $(this).parent().siblings().find(".sub-navi").slideUp();
-            })
-            $(".navi .tit").mouseleave(function(){
-                $(".navi .tit").css("font-weight", "unset");
-                $(this).siblings().stop().slideDown(300);
-                $(".navi .tit button").css("color", "#000");
-            })
-            $(".sub-navi").mouseleave(function(){
-                $(this).slideUp(200)
-            })
+            $(".navi .tit").off("click",function(){});
 
             var swiper = new Swiper(".section2 .swiper", {
             slidesPerView:3,
