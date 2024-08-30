@@ -22,6 +22,8 @@ header .wrap{
 header .wrap h1{
     position: absolute;
     left: 20px;
+    top: 50;
+    transform: translateY(-50%);
 }
 /* header .wrap h1 a{} */
 header .wrap h1 a img{
@@ -30,7 +32,7 @@ header .wrap h1 a img{
 header .wrap .head{
     display: flex;
 }
-header .wrap .lang{
+header .wrap .langE{
     font-size: 16px;
     font-family: sans-serif;
     font-weight: bolder;
@@ -39,6 +41,9 @@ header .wrap .lang{
     top: 50%;
     transform: translateY(-50%);
     
+}
+header .wrap .langK a{
+    display: none;
 }
 header .wrap .btn-search{
     position: absolute;
@@ -251,6 +256,12 @@ header .wrap .gnb .navi .sub-navi .list{
     z-index: 999;
     padding: 20px;
 }
+.banner .txt .b{
+    display: none
+}
+.banner .date .b{
+    display: none;
+}
 .banner .wrap .con .thumb .txt .tit{
     color: #fff;
     font-size: 16px;
@@ -265,6 +276,9 @@ header .wrap .gnb .navi .sub-navi .list{
 }
 /* .banner .wrap .con .thumb img{
 } */
+.banner .wrap .con .subInfo{
+    width: 100%;
+}
 .banner .wrap .con .txt-box{
     display: flex;
     width: 100%;
@@ -367,6 +381,9 @@ header .wrap .gnb .navi .sub-navi .list{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.Eng{
+    display: none;
 }
 .section1 .wrap .Tit h2{
     font-size: 24px;
@@ -530,6 +547,12 @@ header .wrap .gnb .navi .sub-navi .list{
 .section1 .swiper-pagination-bullet-active{
     background-color: #000;
 }
+.swiper-button-next::after{
+    display: none;
+}
+.swiper-button-prev::after{
+    display: none;
+}
 .section2{
     padding: 20px 16px;
     /* margin: 50px 0; */
@@ -664,6 +687,9 @@ header .wrap .gnb .navi .sub-navi .list{
     text-align: center;
     
 }
+.section3 span{
+    display: none;
+}
 .section3 .wrap a{
 }
 .section3 .wrap h1{
@@ -679,7 +705,9 @@ header .wrap .gnb .navi .sub-navi .list{
     /* margin-top: 5px; */
  margin-bottom: 15px;
 }
-    
+.section3 .viewMore .pc{
+    display: none;
+} 
 .section3 .wrap p{
     color: #fff;
     border: 2px solid #fff;
@@ -702,6 +730,9 @@ header .wrap .gnb .navi .sub-navi .list{
 }
 .section4 .wrap{
     position: relative;
+}
+.section4 .name .Eng{
+    display: none;
 }
 .section4 .wrap .Tit{
     display: flex;
@@ -727,25 +758,6 @@ header .wrap .gnb .navi .sub-navi .list{
     transform:rotate(225deg);
     border-bottom: 1px solid #000; 
     border-left: 1px solid #000; 
-}
-.section4 .swiper-button-next{
-    
-    position: absolute;
-    top: 40%;
-    transform: translateY(-40%);
-    color: #000;
-}
-.section4 .swiper-button-next::after{
-    font-size: 30px;
-}
-.section4 .swiper-button-prev{
-    position: absolute;
-    top: 40%;
-    transform: translateY(-40%);
-    color: #000;
-}
-.section4 .swiper-button-prev::after{
-    font-size: 30px;
 }
 .section4 .wrap .slide{
     /* position: relative;
@@ -782,7 +794,7 @@ header .wrap .gnb .navi .sub-navi .list{
     flex-direction: column;
 }
 .section4 .wrap .slide .contents .pro img{
-    width: 85%;
+    width: 100%;
     /* margin: 0 auto; */
     display: flex;
 
@@ -805,6 +817,9 @@ header .wrap .gnb .navi .sub-navi .list{
     margin-bottom: 5px;
     text-align: center;
 }
+.section4 .wrap .slide .contents .pro .txt .detail{
+    display: none;
+}
 .section4 .wrap .slide .contents .pro .txt p{
     font-size: 13px;
     text-align: center;
@@ -822,6 +837,9 @@ header .wrap .gnb .navi .sub-navi .list{
     position: relative;
     width: 100%;
     height: 100%;
+}
+.section5 .wrap .edu_pc{
+    display:none;
 }
 .section5 .wrap .Tit{
     margin-bottom: 20px;
@@ -876,7 +894,7 @@ header .wrap .gnb .navi .sub-navi .list{
 }
 .section5 .wrap .contents{
     position: relative;
-    width: 75%;
+    width: 60%;
     height: 75%;
     overflow:hidden;
     margin: 0 auto;
@@ -952,6 +970,12 @@ header .wrap .gnb .navi .sub-navi .list{
     font-size: 14px;
     font-weight: bold;
 }
+.section5 .wrap .con .cont .txt .pro1{
+    display: none;
+}
+.section5 .wrap .con .cont .txt .pro2{
+    display: none;
+}
 .section5 .swiper-pagination-bullet-active{
     background-color: #000;
 }
@@ -960,6 +984,14 @@ header .wrap .gnb .navi .sub-navi .list{
 }
 .section6 .wrap{
     position: relative;
+}
+
+.tabnumber{
+    display: none;
+}
+.section6 .txt4,
+.section6 .txt5{
+    display: none;
 }
 .section6 .wrap .Tit{
     display: flex;
@@ -1034,9 +1066,9 @@ header .wrap .gnb .navi .sub-navi .list{
 .section6 .wrap .tabTxt1 li a,
 .section6 .wrap .tabTxt1 li a{
 }
-.section6 .wrap .tabTxt1 li p:nth-child(1),
-.section6 .wrap .tabTxt2 li p:nth-child(1),
-.section6 .wrap .tabTxt3 li p:nth-child(1){
+.section6 .wrap .tabTxt1 li p:nth-child(2),
+.section6 .wrap .tabTxt2 li p:nth-child(2),
+.section6 .wrap .tabTxt3 li p:nth-child(2){
     font-weight: bold;
     margin-bottom: 3px;
     display: -webkit-box;
@@ -1049,6 +1081,7 @@ header .wrap .gnb .navi .sub-navi .list{
 .section6 .wrap .tabTxt3 li p:nth-child(2){
     font-size: 16px;
 }
+.section6 .wrap .section6_right{display: none;}
 footer{
     /* background-color: #d9d9d9; */
     margin-top: 30px;

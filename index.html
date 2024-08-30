@@ -21,18 +21,26 @@
     <div id="wrapper">
         <header>
             <div class="wrap">
-                <h1><a href="#"><img src="./images/moca_logo.png" alt=""></a></h1>
-                <div class="head">
-                    <div class="lang"><a href="#">ENG</a></div>
-                    <div class="btn-search"><button type="button"><a href="#"><img src="./images/search.icon.png" alt=""></a></button></div>
-                    <div class="open">
-                        <div class="btn-open">
-                            <span class="line"></span>
-                            <span class="line"></span>
-                            <span class="line"></span>
+                <div class="headerTop">
+                    <h1><a href="#"><img src="./images/moca_logo.png" alt=""></a></h1>
+                    <div class="head">
+                        <div class="lang">
+                            <div class="langE">
+                                <a href="#" >ENG</a>
+                            </div>
+                            <div class="langK">
+                                <a href="#">KOR</a>
+                            </div>
+                        </div>
+                        <div class="btn-search"><button type="button"><a href="#"><img src="./images/search.icon.png" alt=""></a></button></div>
+                        <div class="open">
+                            <div class="btn-open">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </div>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="gnb">
                     <div class="icon">
@@ -128,6 +136,9 @@
                         <div class="tit">
                             <button type="button">자료실</button>
                         </div>
+                        <div class="sub-navi">
+                            <div class="list"><a href="#">자료실</a></div>
+                        </div>
                     </div>
                     <div class="navi">
                         <div class="tit">
@@ -170,45 +181,47 @@
                             </div>
                         </div>
                     </div>
-                    <div class="txt-box">
-                        <div class="box1">
-                            <a href="#">
-                                <p>관람안내</p>
-                                <img src="./images/arrow_right.png" alt="">
-                            </a>
+                    <div class="subInfo">
+                        <div class="txt-box">
+                            <div class="box1">
+                                <a href="#">
+                                    <p>관람안내</p>
+                                    <img src="./images/arrow_right.png" alt="">
+                                </a>
+                            </div>
+                            <div class="box2">
+                                <a href="#">
+                                    <p>오시는길</p>
+                                    <img src="./images/arrow_right.png" alt="">
+                                </a>
+                            </div>
                         </div>
-                        <div class="box2">
-                            <a href="#">
-                                <p>오시는길</p>
-                                <img src="./images/arrow_right.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="info">
-                        <div class="time">
-                            <img src="./images/time.png" alt="">
-                            <div class="txt">
-                                <h2>관람안내</h2>
-                                <div class="sub">
-                                    <h3>월-일 10:00 ~ 18:00</h3>
-                                    <p>*17:30 입장마감</p>
+                        <div class="info">
+                            <div class="time">
+                                <img src="./images/time.png" alt="">
+                                <div class="txt">
+                                    <h2>관람안내</h2>
+                                    <div class="sub">
+                                        <h3>월-일 10:00 ~ 18:00</h3>
+                                        <p>*17:30 입장마감</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="ticket">
-                            <img src="./images/ticket.png" alt="">
-                            <div class="txt">
-                                <h2>관람료</h2>
-                                <h3>무료</h3>
+                            <div class="ticket">
+                                <img src="./images/ticket.png" alt="">
+                                <div class="txt">
+                                    <h2>관람료</h2>
+                                    <h3>무료</h3>
+                                </div>
                             </div>
-                        </div>
-                        <div class="calendar">
-                            <img src="./images/calendar.png" alt="">
-                            <div class="txt">
-                                <h2>휴관일</h2>
-                                <div class="sub">
-                                    <h3>매주 월요일 휴관 외</h3>
-                                    <p>*자세한 사항 관람안내 참조</p>
+                            <div class="calendar">
+                                <img src="./images/calendar.png" alt="">
+                                <div class="txt">
+                                    <h2>휴관일</h2>
+                                    <div class="sub">
+                                        <h3>매주 월요일 휴관 외</h3>
+                                        <p>*자세한 사항 관람안내 참조</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -218,8 +231,11 @@
         </div>
         <div class="section1">
             <div class="wrap">
-                <div class="Tit">
-                    <h2>전시</h2>
+                <div class="Tit"><!-- 타이틀 밑 마진은 100   section마다 패당은padding: 40px 16px 99px;-->
+                    <div class="name">
+                        <h2>전시</h2>
+                        <p class="Eng">Exhibition</p>
+                    </div>
                     <div class="btn-more">
                         <a href="#">
                             더보기
@@ -232,34 +248,36 @@
                             <div class="thumb">
                                 <img src="./images/section1 img.jfif" alt="">     
                             </div>
-                            <div class="title">
-                                <h3>
-                                    포스트모던 어린이 [2부]
-                                </h3>
-                            </div>
-                            <div class="con"> 
-                                <ul class="tab f">
-                                    <li><button type="button">전시정보</button></li>
-                                    <li><button type="button">전시소개</button></li>
-                                </ul>
-                                <div class="txt">
-                                    <div class="information a">
-                                        <div class="info1">
-                                            <h4>기간</h4>
-                                            <p>2023. 5. 5.(금) ~ 2023. 8.27.(일)</p>
+                            <div class="thumbTxt">
+                                <div class="title">
+                                    <h3>
+                                        포스트모던 어린이 [2부]
+                                    </h3>
+                                </div>
+                                <div class="con"> 
+                                    <ul class="tab f">
+                                        <li><button type="button">전시정보</button></li>
+                                        <li><button type="button">전시소개</button></li>
+                                    </ul>
+                                    <div class="txt">
+                                        <div class="information a">
+                                            <div class="info1">
+                                                <h4>기간</h4>
+                                                <p>2023. 5. 5.(금) ~ 2023. 8.27.(일)</p>
+                                            </div>
+                                            <div class="info2">
+                                                <h4>전시장소</h4>
+                                                <p>부산현대미술관 전시실 3,4,5</p>
+                                            </div>
+                                            <div class="info3">
+                                                <h4>참여작가</h4>
+                                                <p>2ceramists(민승기+연호경), 고요손, 김나희, 김슬기, 김우진, 김주영, 김지용, 김한샘, 노한솔, 다모, 드림 팝, 미디다이스, 박솜, 박여주, 변순철, 서인지, 송예환, 신정식, 안태원, 업체eobchae, 오가영, 워크스, 윤충근, 이명미, 이은, 이은솔, 일상의실천, 콜렉티브 꼼, 토담, HHHA, 아이에스븨엔, 000, 스크리닝 프로젝트: 동시상영(샤론 헤이즈, 아나히타 가즈비니자 데, 레나타 분터, 요한나 빌링, 가이 벤너), 한국독립애니메이션협회(씨앗), 닉 코스마스, 아르디라 푸트라, 알리스터 니콜스, 엑스칼리버, 울랄라 이마이, 율리 야마가타, 캐스퍼 보스만스, 쿄코 이데츠, 파라 아타시</p>
+                                            </div>
                                         </div>
-                                        <div class="info2">
-                                            <h4>전시장소</h4>
-                                            <p>부산현대미술관 전시실 3,4,5</p>
-                                        </div>
-                                        <div class="info3">
-                                            <h4>참여작가</h4>
-                                            <p>2ceramists(민승기+연호경), 고요손, 김나희, 김슬기, 김우진, 김주영, 김지용, 김한샘, 노한솔, 다모, 드림 팝, 미디다이스, 박솜, 박여주, 변순철, 서인지, 송예환, 신정식, 안태원, 업체eobchae, 오가영, 워크스, 윤충근, 이명미, 이은, 이은솔, 일상의실천, 콜렉티브 꼼, 토담, HHHA, 아이에스븨엔, 000, 스크리닝 프로젝트: 동시상영(샤론 헤이즈, 아나히타 가즈비니자 데, 레나타 분터, 요한나 빌링, 가이 벤너), 한국독립애니메이션협회(씨앗), 닉 코스마스, 아르디라 푸트라, 알리스터 니콜스, 엑스칼리버, 울랄라 이마이, 율리 야마가타, 캐스퍼 보스만스, 쿄코 이데츠, 파라 아타시</p>
-                                        </div>
-                                    </div>
-                                    <div class="intro a">
-                                        <div class="intro1">
-                                            《포스트모던어린이》는 어린이라는 존재 형태가 훈육의 대상으로 드러날 수밖에 없는이유를 보편타당이라는 개념에 근거한 근대의 연속으로 이해하고 이러한 계몽적 사고가 봉착한 위기 상황을 비판적으로 고찰한다. 전시는 근대의이원론적 질서를 포기하기 위해 분리와 해방이라는 특정한 상황을 제시한다. 전시의 1부에서는 먼저 근대와의 분리를 통해 이성 중심의 사고가설정한 어린이 개념이 어린이 개인의 고유성을 부정하고 억압하는 방식으로전개해 왔음을 확인한다. 2023년 5월에 이어지는 전시의 2부에서는 근대로부터의 해방을 주제로 보편타당으로여겨왔던 지식이 해체되었을 때 비로소 다양한 존재 형태의 공존이 가능함을 이야기한다. 
+                                        <div class="intro a">
+                                            <div class="intro1">
+                                                《포스트모던어린이》는 어린이라는 존재 형태가 훈육의 대상으로 드러날 수밖에 없는이유를 보편타당이라는 개념에 근거한 근대의 연속으로 이해하고 이러한 계몽적 사고가 봉착한 위기 상황을 비판적으로 고찰한다. 전시는 근대의이원론적 질서를 포기하기 위해 분리와 해방이라는 특정한 상황을 제시한다. 전시의 1부에서는 먼저 근대와의 분리를 통해 이성 중심의 사고가설정한 어린이 개념이 어린이 개인의 고유성을 부정하고 억압하는 방식으로전개해 왔음을 확인한다. 2023년 5월에 이어지는 전시의 2부에서는 근대로부터의 해방을 주제로 보편타당으로여겨왔던 지식이 해체되었을 때 비로소 다양한 존재 형태의 공존이 가능함을 이야기한다. 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -269,35 +287,37 @@
                             <div class="thumb">
                                 <img src="./images/section1 img2.jfif" alt="">     
                             </div>
-                            <div class="title">
-                                <h3>
-                                    능수능란한 관종 
-                                </h3>
-                            </div>
-                            <div class="con"> 
-                                <ul class="tab s">
-                                    <li><button type="button">전시정보</button></li>
-                                    <li><button type="button">전시소개</button></li>
-                                </ul>
-                                <div class="txt">
-                                    <div class="information b">
-                                        <div class="info1">
-                                            <h4>기간</h4>
-                                            <p>2024. 3. 16.(토) ~ 2024. 7. 7.(일)</p>
+                            <div class="thumbTxt">
+                                <div class="title">
+                                    <h3>
+                                        능수능란한 관종 
+                                    </h3>
+                                </div>
+                                <div class="con"> 
+                                    <ul class="tab s">
+                                        <li><button type="button">전시정보</button></li>
+                                        <li><button type="button">전시소개</button></li>
+                                    </ul>
+                                    <div class="txt">
+                                        <div class="information b">
+                                            <div class="info1">
+                                                <h4>기간</h4>
+                                                <p>2024. 3. 16.(토) ~ 2024. 7. 7.(일)</p>
+                                            </div>
+                                            <div class="info2">
+                                                <h4>전시장소</h4>
+                                                <p>지하 1층 전시실</p>
+                                            </div>
+                                            <div class="info3">
+                                                <h4>참여작가</h4>
+                                                <p>듀킴, 성능경, 신민, 신신, 이강혁, 이목하, 원정백화점, 조영남, 권시우, 장진택, 마코, 컨아밈, 컬처 코뮌, 아나 멘디에타, 크리스 버든, 크리스틴 티엔 왕, 다르코 매이버, 에바 & 프랑코 매츠, 조지 네텔, 과리오넥스 로드리게즈 주니어, 줄리아나 헉스터블, 피에로 만초니, 토마스 허쉬혼 등 (23명/팀)</p>
+                                            </div>
                                         </div>
-                                        <div class="info2">
-                                            <h4>전시장소</h4>
-                                            <p>지하 1층 전시실</p>
-                                        </div>
-                                        <div class="info3">
-                                            <h4>참여작가</h4>
-                                            <p>듀킴, 성능경, 신민, 신신, 이강혁, 이목하, 원정백화점, 조영남, 권시우, 장진택, 마코, 컨아밈, 컬처 코뮌, 아나 멘디에타, 크리스 버든, 크리스틴 티엔 왕, 다르코 매이버, 에바 & 프랑코 매츠, 조지 네텔, 과리오넥스 로드리게즈 주니어, 줄리아나 헉스터블, 피에로 만초니, 토마스 허쉬혼 등 (23명/팀)</p>
-                                        </div>
-                                    </div>
-                                    <div class="intro b">
-                                        <div class="intro1">
-                                            《능수능란한 관종》은 현대 사회에서 관심을 획득하고 유지하는 다양한 방법을 동시대 예술의 관점에서 탐구한다. 전시는 관종이라는 다소 과격한 용어를 넘어 관심을 추구하는 행위가 단순히 개인의 문제가 아니라 우리 모두가 직면한 사회의 본질적인 부분임을 탐색한다. 여기서 우리는 예술·광고·정치 등 다양한 영역에서 관심을 얻기 위해 사용되는 전략들을 조명하며 이 과정에서 발생하는 갈등과 모순 그리고 창의성을 들여다 본다.
-                                            전시는 관심을 얻기 위해 우리가 얼마나 멀리 갈 수 있는지 그리고 그 과정에서 우리 자신을 얼마나 잃어버릴 수 있는지 성찰하는 기회를 제공한다. 이는 단순한 관심의 추구가 아니라 우리의 본질적 가치와 우리가 살아가고자 하는 삶의 방식에 대한 고찰로 이어질 수 있다. 전시를 통해 어느 정도는 관종이 되어야 하는 현대 사회의 압박 속에서 어떻게 일상을 유지하고 의미 있는 삶을 구축할 수 있는지에 대해 고민할 수 있는 계기가 되기를 기대한다.
+                                        <div class="intro b">
+                                            <div class="intro1">
+                                                《능수능란한 관종》은 현대 사회에서 관심을 획득하고 유지하는 다양한 방법을 동시대 예술의 관점에서 탐구한다. 전시는 관종이라는 다소 과격한 용어를 넘어 관심을 추구하는 행위가 단순히 개인의 문제가 아니라 우리 모두가 직면한 사회의 본질적인 부분임을 탐색한다. 여기서 우리는 예술·광고·정치 등 다양한 영역에서 관심을 얻기 위해 사용되는 전략들을 조명하며 이 과정에서 발생하는 갈등과 모순 그리고 창의성을 들여다 본다.
+                                                전시는 관심을 얻기 위해 우리가 얼마나 멀리 갈 수 있는지 그리고 그 과정에서 우리 자신을 얼마나 잃어버릴 수 있는지 성찰하는 기회를 제공한다. 이는 단순한 관심의 추구가 아니라 우리의 본질적 가치와 우리가 살아가고자 하는 삶의 방식에 대한 고찰로 이어질 수 있다. 전시를 통해 어느 정도는 관종이 되어야 하는 현대 사회의 압박 속에서 어떻게 일상을 유지하고 의미 있는 삶을 구축할 수 있는지에 대해 고민할 수 있는 계기가 되기를 기대한다.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -307,34 +327,36 @@
                             <div class="thumb">
                                 <img src="./images/section1 img3.jfif" alt="">     
                             </div>
-                            <div class="title">
-                                <h3>
-                                    누구의 이야기 
-                                </h3>
-                            </div>
-                            <div class="con"> 
-                                <ul class="tab t">
-                                    <li><button type="button">전시정보</button></li>
-                                    <li><button type="button">전시소개</button></li>
-                                </ul>
-                                <div class="txt">
-                                    <div class="information c">
-                                        <div class="info1">
-                                            <h4>기간</h4>
-                                            <p>2022.12.09.(금) ~ 2023.03.05.(일)</p>
+                            <div class="thumbTxt">
+                                <div class="title">
+                                    <h3>
+                                        누구의 이야기 
+                                    </h3>
+                                </div>
+                                <div class="con"> 
+                                    <ul class="tab t">
+                                        <li><button type="button">전시정보</button></li>
+                                        <li><button type="button">전시소개</button></li>
+                                    </ul>
+                                    <div class="txt">
+                                        <div class="information c">
+                                            <div class="info1">
+                                                <h4>기간</h4>
+                                                <p>2022.12.09.(금) ~ 2023.03.05.(일)</p>
+                                            </div>
+                                            <div class="info2">
+                                                <h4>전시장소</h4>
+                                                <p>전시실 2(2층)</p>
+                                            </div>
+                                            <div class="info3">
+                                                <h4>참여작가</h4>
+                                                <p>강서경, 날리니 말라니, 신성희, 윤향로, 임동식, 정정엽, 크리스틴 선 킴, 홍순명, 홍영인</p>
+                                            </div>
                                         </div>
-                                        <div class="info2">
-                                            <h4>전시장소</h4>
-                                            <p>전시실 2(2층)</p>
-                                        </div>
-                                        <div class="info3">
-                                            <h4>참여작가</h4>
-                                            <p>강서경, 날리니 말라니, 신성희, 윤향로, 임동식, 정정엽, 크리스틴 선 킴, 홍순명, 홍영인</p>
-                                        </div>
-                                    </div>
-                                    <div class="intro c">
-                                        <div class="intro1">
-                                            ‘누구의 이야기’에는 할머니부터 엄마와 아이, 보이지 않는 여성과 노동, 자연, 인간과 비인간, 소통의 몸짓뿐만 아니라 물질과 그 너머 영적인 존재가 등장한다. 이 작은 이야기는 분리되지 않는 가닥들이 교차하고 이어져 서로를 지지한다. 작가들은 이에 대한 관찰자이자 목격자로 보이지 않거나 목소리조차 잡히지 않는 이들을 비춰준다. 잊힌 존재나 들리지 않는 소리와 대화하는 방법을 발견하고 새로 얽어 연결하는 은유를 사용한다. 단선적이지 않은 삶의 주름들 사이에 빼곡히 숨어 있는 기억, 감정과 어쩌면 모순적이고 복합적인 시점과 태도는 교차하며 시대의 단편을 간파해낸다.
+                                        <div class="intro c">
+                                            <div class="intro1">
+                                                ‘누구의 이야기’에는 할머니부터 엄마와 아이, 보이지 않는 여성과 노동, 자연, 인간과 비인간, 소통의 몸짓뿐만 아니라 물질과 그 너머 영적인 존재가 등장한다. 이 작은 이야기는 분리되지 않는 가닥들이 교차하고 이어져 서로를 지지한다. 작가들은 이에 대한 관찰자이자 목격자로 보이지 않거나 목소리조차 잡히지 않는 이들을 비춰준다. 잊힌 존재나 들리지 않는 소리와 대화하는 방법을 발견하고 새로 얽어 연결하는 은유를 사용한다. 단선적이지 않은 삶의 주름들 사이에 빼곡히 숨어 있는 기억, 감정과 어쩌면 모순적이고 복합적인 시점과 태도는 교차하며 시대의 단편을 간파해낸다.
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -342,14 +364,18 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>   
-        </div>
         </div>
         <div class="section2">
             <div class="wrap">
                 <div class="Tit">
-                    <h2>소장품</h2>
+                    <div class="name">
+                        <h2>소장품</h2>
+                        <p class="Eng">Collection</p>
+                    </div>
                     <div class="btn-more">
                         <a href="#">
                             더보기
@@ -358,7 +384,13 @@
                 </div>
                 <div class="slide swiper">
                     <div class="collection swiper-wrapper">
-
+                        <div class="col collection1 swiper-slide">
+                            <a href="#">
+                                <img src="./images/coll1.jpg" alt="">
+                                <h3>변신</h3>
+                                <p>김성철</p>
+                            </a>
+                        </div>
                         <div class="col collection2 swiper-slide">
                             <a href="#">
                                 <img src="./images/coll2.jpg" alt="">
@@ -375,7 +407,7 @@
                         </div>
                         <div class="col collection4 swiper-slide">
                             <a href="#">
-                                <img src="./images/coll1.jpg" alt="">
+                                <img src="./images/coll4.jpg" alt="">
                                 <h3>갈대와 수염잇기</h3>
                                 <p>임동식</p>
                             </a>
@@ -383,8 +415,8 @@
                         <div class="col collection5 swiper-slide">
                             <a href="#">
                                 <img src="./images/coll5.jpg" alt="">
-                                <h3>침묵하는 북</h3>
-                                <p>홍영인</p>
+                                <h3>마음의 섬들(Islands of the Mind)</h3>
+                                <p>임현정</p>
                             </a>
                         </div>
                         <div class="col collection6 swiper-slide">
@@ -394,13 +426,7 @@
                                 <p>임동식</p>
                             </a>
                         </div>
-                        <div class="col collection7 swiper-slide">
-                            <a href="#">
-                                <img src="./images/coll7.jpg" alt="">
-                                <h3>Dummy No.63~No.83</h3>
-                                <p>박웅규</p>
-                            </a>
-                        </div>
+                       
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -411,14 +437,21 @@
                 <a href="#">
                     <h1>‘나’와 ‘세상’에 대한 새로운 읽기를 시도하는 공간</h1>
                     <h2>책 그림섬</h2>
-                    <p>더 알아보기</p>
+                    <div class="viewMore">
+                        <p class="mobile">더 알아보기</p>
+                        <p class="pc">책 그림섬 더보기</p>
+                        <span class="material-symbols-outlined">arrow_forward</span>
+                    </div>
                 </a>
             </div>
         </div>
         <div class="section4">
             <div class="wrap">
                 <div class="Tit">
-                    <h2>책 그림섬 프로그램</h2>
+                    <div class="name">
+                        <h2>책 그림섬 프로그램</h2>
+                        <p class="Eng">Book Picture Island Program</p>
+                    </div>
                     <div class="btn-more">
                         <a href="#">
                             더보기
@@ -431,8 +464,11 @@
                             <a href="#">
                                 <img src="./images/pro_1" alt="">
                                 <div class="txt">
-                                    <h3>새나라의 어린이</h2>
+                                    <h3>〈우리 동그라미></h3>
                                     <p>-기간:2024. 8. 17.(토) ~ 2025. 4. 14.(일)</p>
+                                    <p class="detail">
+                                        부산현대미술관은 '생태'주제와 관련된 다양한 전시, 프로그램, 행사 등을 준비하고 있습니다. 책 그림섬 또한 '우리동그라미'를 통해 어린이의 환경친화적 태도와 생태 소양을 높일 수 있는 역할을 하고자 합니다.
+                                    </p>
                                 </div>
                             </a>
                         </div>
@@ -440,8 +476,11 @@
                             <a href="#">
                                 <img src="./images/pro_2" alt="">
                                 <div class="txt">
-                                    <h3>〈관종이란 숲 속에는〉</h2>
+                                    <h3>〈관종이란 숲 속에는〉</h3>
                                     <p>-기간:2024. 3. 16.(토) ~ 2024. 7. 7.(일)</p>
+                                    <p class="detail">
+                                        《관종이란 숲 속에서는》에서는 다른 이에게 인정받고자 하는 부분에 초점을 맞추었습니다. 관심을 통해 스스로를 이해하고 자신의 가치를 발견하여 내면의 숲이 점점 더 풍성하고 두드러지길 바랍니다.
+                                    </p>
                                 </div>
                             </a>
                         </div>
@@ -449,8 +488,11 @@
                             <a href="#">
                                 <img src="./images/pro_3.png" alt="">
                                 <div class="txt">
-                                    <h3>〈80억 개의 우주></h2>
-                                    <p>-기간:2023. 5. 5.() ~ 2023. 8. 27.(일)</p>
+                                    <h3>〈80억개의 우주〉</h3>
+                                    <p>-기간:2023. 5. 5.(토) ~ 2023. 8. 27.(일)</p>
+                                    <p class="detail">
+                                        《포스트모던어린이》 전시 2부와 연계된 기획서가 '80억개의 우주'는 우리가 가지고 있는, 특히 어린이가 가지고 있는 다양한 가능성에 대해 다룬 책을 소개하고자 합니다.
+                                    </p>
                                 </div>
                             </a>
                         </div>
@@ -458,8 +500,11 @@
                             <a href="#">
                                 <img src="./images/pro_4" alt="">
                                 <div class="txt">
-                                    <h3>〈우리는 모두 어린이였다></h2>
+                                    <h3>〈우리는 모두 어린이였다〉</h3>
                                     <p>-기간:2022. 12. 17.(토) ~ 2023. 4. 23.(일)</p>
+                                    <p class="detail">
+                                        근대성이 가진 어린이의 고유성을 부정하는 방식에 주목하여, 어른의 기준으로 어린이의 보편타당성을 규정하는 책들에 대해 이야기 하려 합니다.
+                                    </p>
                                 </div>
                             </a>
                         </div>
@@ -473,51 +518,75 @@
         <div class="section5">
             <div class="wrap">
                 <div class="Tit">
-                    <h2>교육 및 문화행사</h2>
+                    <div class="name">
+                        <h2>교육 및 문화행사</h2>
+                        <p class="Eng">Educational and cultural events</p>
+                    </div>
                     <div class="btn-more">
                         <a href="#">
                             더보기
                         </a>
                     </div>
                 </div>
-                <div class="contents swiper">
-                    <div class="con swiper-wrapper">
-                        <div class="cont swiper-slide">
+                <div class="edu_pro">
+                    <div class="contents swiper">
+                        <div class="con swiper-wrapper">
+                            <div class="cont swiper-slide">
+                                <a href="#">
+                                    <img src="images/edu_1" alt="">
+                                    <div class="txt">
+                                        <h3>부산모카 〈사부작 사부작〉</h3>
+                                        <p>-기간:2024. 6. 14.(금) ~ 2024. 11. 1.(금)</p>
+                                        <p class="pro1">
+                                            부산현대미술관에서는 부산을 기반으로 활동하는 방정아 작가와 예술공간 영주맨션 이봉미 대표가 함께하는 만 50세 이상 시민 대상 교육 프로그램 〈사부작 사부작〉을 개최합니다. 5차시로 이어지는 예술 활동과 미술관에서 이루어지는 요가, 싱잉볼 명상 등의 신체 활동을 통해 미술관과 일상을 연결하는 지점을 찾아보려 합니다. 예술가와의 소통을 통한 예술 경험 확대와 교류 활동으로 미술관을 낯선 공간이 아닌 편안한 일상 속 문화 공간으로 느낄 수 있도록 많은 시민 여러분의 관심 바랍니다.  
+    
+    
+                                        </p>
+                                        <p class="pro2">
+                                            ▪ 신청방법: 부산시 통합예약 사이트 ▷ 견학/체험 ▷ 부산현대미술관 
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cont swiper-slide">
+                                <a href="#">
+                                    <img src="images/edu_2" alt="">
+                                    <div class="txt">
+                                        <h3>부산모카 꼼지락 〈씨앗을 톡톡, 쑥쑥〉</h3>
+                                        <p>-기간:2024. 9. 29.(일) ~ 2024. 9. 29.(일)</p>
+                                        <p class="pro1">
+                                            어린이에게 씨앗이 살아가는 방식에서 서로 기여하고 돕는 우리의 삶을 투영하고 자연과의 교감을 통해 씨앗의 방식으로 가능성을 바라보는 시도를 경험하는 프로그램입니다. 온전한 자연과의 교감과 함께하는 예술 활동을 통해 상상력과 예술적 영감을 발전시킬 수 있는 특별한 시간을 제공합니다. 
+                                        <p class="pro2">
+                                            ▪ 신청방법: 부산통합예약시스템>>견학/체험>>온라인예약 
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="cont swiper-slide">
                             <a href="#">
-                                <img src="images/edu_1" alt="">
-                                <div class="txt">
-                                    <h3>[ 2024 청소년 진로 탐색 프로그램 〈부산모카 반짝〉]</h3>
-                                    <p>-기간:2024. 6. 14.(금) ~ 2024. 11. 1.(금)</p>
-                                </div>
+                                    <img src="images/edu_3" alt="">
+                                    <div class="txt">
+                                        <h3>[미술관 밖 프로젝트] #_멀지만 가까운, 가깝지만 먼</h3>
+                                        <p>-기간:2024. 6. 25(금) ~ 2024. 10.20.(금)</p>
+    
+                                    </div>
                             </a>
+                            </div>
+                            <div class="cont swiper-slide">
+                                <a href="#">
+                                    <img src="images/edu_4" alt="">
+                                    <div class="txt">
+                                        <h3>[미술관 밖 프로젝트] #_소리보기, 읽기, 조합하기</h3>
+                                        <p>-기간:2024. 7. 6.(금) ~ 2024. 9. 29.(금)</p>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
-                        <div class="cont swiper-slide">
-                            <a href="#">
-                                <img src="images/edu_2" alt="">
-                                <div class="txt">
-                                    <h3>[미술관 밖 프로젝트] #_만나는 손과 손: 수평적 감각</h3>
-                                    <p>-기간:2024. 9. 29.(일) ~ 2024. 9. 29.(일)</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="cont swiper-slide">
+                    </div>
+                    <div class="edu_pc">
                         <a href="#">
-                                <img src="images/edu_3" alt="">
-                                <div class="txt">
-                                    <h3>[미술관 밖 프로젝트] #_멀지만 가까운, 가깝지만 먼</h3>
-                                    <p>-기간:2024. 6. 25(금) ~ 2024. 10.20.(금)</p>
-                                </div>
+                            <img src="./images/edu_pc" alt="">
                         </a>
-                        </div>
-                        <div class="cont swiper-slide">
-                            <a href="#">
-                                <img src="images/edu_4" alt="">
-                                <div class="txt">
-                                    <h3>[미술관 밖 프로젝트] #_소리보기, 읽기, 조합하기</h3>
-                                    <p>-기간:2024. 7. 6.(금) ~ 2024. 9. 29.(금)</p>
-                                </div>
-                            </a>
-                        </div>
                     </div>
                 </div>
                 <div class="swiper-button-next"></div>
@@ -527,80 +596,162 @@
         </div>
         <div class="section6">
             <div class="wrap">
-                <div class="Tit">
-                    <ul class="infoTab">
-                        <li><button type="button">공지사항</button></li>
-                        <li><button type="button">보도자료</button></li>
-                        <li><button type="button">자료실</button></li>
+                <div class="section6_left">
+                    <div class="Tit">
+                        <ul class="infoTab">
+                            <li><button type="button">공지사항</button></li>
+                            <li><button type="button">보도자료</button></li>
+                            <li><button type="button">자료실</button></li>
+                        </ul>
+                        <div class="btn-more">
+                            <a href="#">
+                                더보기
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="tabTxt1 d">
+                        <li class="txt1">
+                            <a href="#">
+                                <p class="tabnumber">01</p>
+                                <p>부산현대미술관 임시휴관 안내</p>
+                                <p>2024-08-13</p>
+                            </a>
+                        </li>
+                        <li class="txt2">
+                            <a href="#">
+                                <p class="tabnumber">02</p>
+                                <p>부산현대미술관 8월 운영일정 안내</p>
+                                <p>2024-08-06</p>
+                            </a>
+                        </li>
+                        <li class="txt3">
+                            <a href="#">
+                                <p class="tabnumber">03</p>
+                                <p>부산현대미술관 월별 일정표</p>
+                                <p>2024-07-29</p>
+                            </a>
+                        </li>
+                        <li class="txt4">
+                            <a href="#">
+                                <p class="tabnumber">04</p>
+                                <p>	부산현대미술관 도슨트 운영일정(2024.07)</p>
+                                <p>2024-07-01</p>
+                            </a>
+                        </li>
+                        <li class="txt5">
+                            <a href="#">
+                                <p class="tabnumber">05</p>
+                                <p>	"글로벌 허브도시 부산 〈시민행복 토크콘서트〉" 행사 예정 안내</p>
+                                <p>2024-06-20</p>
+                            </a>
+                        </li>
                     </ul>
-                    <div class="btn-more">
-                        <a href="#">
-                            더보기
-                        </a>
+                    <ul class="tabTxt2 d">
+                        <li class="txt1">
+                            <a href="#">
+                                <p class="tabnumber">01</p>
+                                <p>[부산MoCA, 오늘 만나는 미술] AI가 상상하는 초월적 구원</p>
+                                <p>2024-08-14</p>
+                            </a>
+                        </li>
+                        <li class="txt2">
+                            <a href="#">
+                                <p class="tabnumber">02</p>
+                                <p>[부산MoCA, 오늘 만나는 미술] 민중미술과 밈(Meme)</p>
+                                <p>2024-08-07</p>
+                            </a>
+                        </li>
+                        <li class="txt3">
+                            <a href="#">
+                                <p class="tabnumber">03</p>
+                                <p>현대미술관 외벽 식물 또 말라죽어… "예산 투입 되풀이 안 돼"</p>
+                                <p>	2024-08-04</p>
+                            </a>
+                        </li>
+                        <li class="txt4">
+                            <a href="#">
+                                <p class="tabnumber">04</p>
+                                <p>[부산MoCA, 오늘 만나는 미술] "정의롭지만 졸부는 되고 싶어"</p>
+                                <p>2024-07-31</p>
+                            </a>
+                        </li>
+                        <li class="txt5">
+                            <a href="#">
+                                <p class="tabnumber">05</p>
+                                <p>[부산MoCA, 오늘 만나는 미술] 명품을 찢어서 만든 작품</p>
+                                <p>2024-07-24</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="tabTxt3 d">
+                        <li class="txt1">
+                            <a href="#">
+                                <p class="tabnumber">01</p>
+                                <p>《소장품섬_백현주: 친철한 영자씨》 리플릿</p>
+                                <p>2024-07-31</p>
+                            </a>
+                        </li>
+                        <li class="txt2">
+                            <a href="#">
+                                <p class="tabnumber">02</p>
+                                <p>《능수능란한 관종》 리플릿</p>
+                                <p>2024-05-28</p>
+                            </a>
+                        </li>
+                        <li class="txt3">
+                            <a href="#">
+                                <p class="tabnumber">03</p>
+                                <p>《미술관 밖 프로젝트 #1-6_열 개의 눈》 세부 내용</p>
+                                <p>2024-04-30</p>
+                            </a>
+                        </li>
+                        <li class="txt4">
+                            <a href="#">
+                                <p class="tabnumber">04</p>
+                                <p>《소장품섬_마크 리: 나의 집이었던 곳 / STUDIO 1750: LMO 3116》 리플릿</p>
+                                <p>2024-02-20</p>
+                            </a>
+                        </li>
+                        <li class="txt5">
+                            <a href="#">
+                                <p class="tabnumber">05</p>
+                                <p>	《자연에 대한 공상적 시나리오》 전시 연계 소설</p>
+                                <p>	2024-01-05</p>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="section6_right">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/autoplay1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/autoplay2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/autoplay3" alt="">
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#">
+                                    <img src="./images/autoplay4" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-                <ul class="tabTxt1 d">
-                    <li class="txt1">
-                        <a href="#">
-                            <p>부산현대미술관 임시휴관 안내</p>
-                            <p>2024-08-13</p>
-                        </a>
-                    </li>
-                    <li class="txt2">
-                        <a href="#">
-                            <p>부산현대미술관 8월 운영일정 안내</p>
-                            <p>2024-08-06</p>
-                        </a>
-                    </li>
-                    <li class="txt3">
-                        <a href="#">
-                            <p>부산현대미술관 월별 일정표</p>
-                            <p>2024-07-29</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="tabTxt2 d">
-                    <li class="txt1">
-                        <a href="#">
-                            <p>[부산MoCA, 오늘 만나는 미술] AI가 상상하는 초월적 구원</p>
-                            <p>2024-08-14</p>
-                        </a>
-                    </li>
-                    <li class="txt2">
-                        <a href="#">
-                            <p>[부산MoCA, 오늘 만나는 미술] 민중미술과 밈(Meme)</p>
-                            <p>2024-08-07</p>
-                        </a>
-                    </li>
-                    <li class="txt3">
-                        <a href="#">
-                            <p>현대미술관 외벽 식물 또 말라죽어… "예산 투입 되풀이 안 돼"</p>
-                            <p>	2024-08-04</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="tabTxt3 d">
-                    <li class="txt1">
-                        <a href="#">
-                            <p>《소장품섬_백현주: 친철한 영자씨》 리플릿</p>
-                            <p>2024-07-31</p>
-                        </a>
-                    </li>
-                    <li class="txt2">
-                        <a href="#">
-                            <p>《능수능란한 관종》 리플릿</p>
-                            <p>2024-05-28</p>
-                        </a>
-                    </li>
-                    <li class="txt3">
-                        <a href="#">
-                            <p>《미술관 밖 프로젝트 #1-6_열 개의 눈》 세부 내용</p>
-                            <p>2024-04-30</p>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
+        
         <footer>
             <div class="copyright-txt">
                 <p>(우 49300) 부산광역시 사하구 낙동남로 1191 (하단동)  부산현대미술관 
@@ -654,14 +805,90 @@
                 $(this).children().css("color", "#0093cf");
                 $(this).siblings().stop().slideToggle(300);
                 $(this).parent().siblings().find(".sub-navi").slideUp();
+                
+                
             })
+            $(".tab li").click(function(){
+                const i = $(this).index();
+                $(".exh .f li").css("border-bottom", "7px solid #d9d9d9");
+                $(".exh .f li").eq(i).css("border-bottom", "7px solid #000");
+                $(".exh .s li").css("border-bottom", "7px solid #d9d9d9");
+                $(".exh .s li").eq(i).css("border-bottom", "7px solid #000");
+                $(".exh .t li").css("border-bottom", "7px solid #d9d9d9");
+                $(".exh .t li").eq(i).css("border-bottom", "7px solid #000");
+                $(".a").hide();
+                $(".a").eq(i).show();
+                $(".b").hide();
+                $(".b").eq(i).show();
+                $(".c").hide();
+                $(".c").eq(i).show();    })
+               
+                var swiper = new Swiper(".section2 .swiper", {
+                slidesPerView: 1.5,
+                spaceBetween: 12,
+                freeMode: true,
+                pagination: {
+                    el: ".section2 .swiper-pagination",
+                    clickable: true,
+                },
+                });
+
+                //section4 슬라이드
+                var swiper = new Swiper(".section4 .swiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".section4 .swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                }); 
+                //section5 슬라이드
+                var swiper = new Swiper(".section5 .swiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                loop: true,
+                pagination: {
+                    el: ".section5 .swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                }); 
         }
         const NavDesktop = function() {
-            $(".navi .tit").on("click", function(){
-                
-                $(this).siblings().stop().slideToggle(300);
+            $(".navi .tit").mouseover(function(){
+                $(".navi .tit").css("font-weight", "unset");
+                $(".navi .tit").css("border-bottom", "unset");
+                $(this).children().css("color", "#0093cf");
+                $(this).css("font-weight", "bolder");
+                $(this).siblings().stop().slideDown(300);
                 $(this).parent().siblings().find(".sub-navi").slideUp();
             })
+            $(".navi .tit").mouseleave(function(){
+                $(".navi .tit").css("font-weight", "unset");
+                $(this).siblings().stop().slideDown(300);
+                $(".navi .tit button").css("color", "#000");
+            })
+            $(".sub-navi").mouseleave(function(){
+                $(this).slideUp(200)
+            })
+
+            var swiper = new Swiper(".section2 .swiper", {
+            slidesPerView:3,
+            spaceBetween: 12,
+            freeMode: true,
+            pagination: {
+                el: ".section2 .swiper-pagination",
+                clickable: true,
+            },
+            });
         }
 
         const HandleResponsiveEvent = function() {
@@ -681,24 +908,11 @@
         });
         HandleResponsiveEvent();
         
-        //nav 메뉴
-        //section1(전시) tab
-         $(".tab li").click(function(){
-            const i = $(this).index();
-            $(".exh .f li").css("border-bottom", "7px solid #d9d9d9");
-            $(".exh .f li").eq(i).css("border-bottom", "7px solid #000");
-            $(".exh .s li").css("border-bottom", "7px solid #d9d9d9");
-            $(".exh .s li").eq(i).css("border-bottom", "7px solid #000");
-            $(".exh .t li").css("border-bottom", "7px solid #d9d9d9");
-            $(".exh .t li").eq(i).css("border-bottom", "7px solid #000");
-            $(".a").hide();
-            $(".a").eq(i).show();
-            $(".b").hide();
-            $(".b").eq(i).show();
-            $(".c").hide();
-            $(".c").eq(i).show();
-         })
-         
+
+
+
+
+
          //section1 슬라이드
         var swiper = new Swiper(".section1 .swiper", {
         slidesPerView: 1,
@@ -713,44 +927,9 @@
             prevEl: ".swiper-button-prev",
         },
         }); 
-        //section2 슬라이드
-        var swiper = new Swiper(".section2 .swiper", {
-        slidesPerView: 1.5,
-        spaceBetween: 12,
-        freeMode: true,
-        pagination: {
-            el: ".section2 .swiper-pagination",
-            clickable: true,
-        },
-        });
-        // section4 슬라이드
-        var swiper = new Swiper(".section4 .swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: ".section4 .swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        }); 
+        
         //section5 슬라이드
-        var swiper = new Swiper(".section5 .swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: ".section5 .swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        }); 
+        
          //section6(공지사항) tab
          $(".infoTab li").click(function(){
             const d = $(this).index();
@@ -760,6 +939,24 @@
             $(".d").hide();
             $(".d").eq(d).show();
          })
+
+         //section6 자동재생 슬라이드
+         var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            });
          
     </script>
 </body>
