@@ -169,7 +169,10 @@ header .wrap .gnb .navi .tit{
     display: flex;
     align-items: center;
     background-color: #fff;
-}  
+}
+header .wrap .gnb .navi:last-child .tit{
+    border-bottom: 0px solid #000;
+}
 header .wrap .gnb .navi:hover .tit::after{
     transform: translateY(-50%) rotate(-45deg);
 }
@@ -185,12 +188,15 @@ header .wrap .gnb .navi .tit::after{
     right: 20px;
     top: 50%;
 }
+header .wrap .gnb .navi .tit:last-child::after{
+    display: none;
+}
 header .wrap .gnb .navi .tit button{
     font-size: 21px;
     font-weight: bolder;
     margin-left: 15px;
 }  
-header .wrap .gnb .navi:last-child{
+.reserve{
     border: 2px solid #000;
     padding: 5px;
     border-radius: 40px;
@@ -205,7 +211,7 @@ header .wrap .gnb .navi:last-child{
 }
 header .wrap .gnb .navi:last-child button{
 }
-header .wrap .gnb .navi:last-child button a{
+.reserve a{
     font-size: 21px;
     font-weight: bolder;
 }
@@ -238,6 +244,9 @@ header .wrap .gnb .navi .sub-navi .list{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.banner .wrap .con .con_name{
+    display: none;
 }
 .banner .wrap .con .thumb{
     position: relative;
@@ -879,29 +888,17 @@ header .wrap .gnb .navi .sub-navi .list{
     margin-right: auto;
 }
 .section5 .swiper-button-next{
-    position: absolute;
-    right: 0;
-    top: 55%;
-    transform: translateY(-55%);
-    color: #000;
 }
 .section5 .swiper-button-next::after{
-    font-size: 30px;
 }
 .section5 .swiper-button-prev{
-    position: absolute;
-    left: 0;
-    top: 55%;
-    transform: translateY(-55%);
-    color: #000;
 }
 .section5 .swiper-button-prev::after{
-    font-size: 30px;
 }
 .section5 .wrap .contents{
     position: relative;
-    width: 60%;
-    height: 75%;
+    width: 80%;
+    height: auto;
     overflow:hidden;
     margin: 0 auto;
 }
