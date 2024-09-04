@@ -787,7 +787,10 @@
         /* margin-left: 20px; */
         
     }
-    .section2 .wrap .slide .col a{}
+    .section2 .wrap .slide .col a{
+        display: block;
+        width: 100%;
+    }
     .section2 .wrap .slide .col a img{
         /* object-fit: contain;
         max-width: 400px;
@@ -1229,7 +1232,7 @@
     }
     .section6 .txt4,
     .section6 .txt5{
-        display: unset;
+        display: flex;
     }
     .section6 .wrap .Tit{
         display: flex;
