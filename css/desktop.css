@@ -33,7 +33,6 @@
     header .wrap h1{
         transform: unset;
     }
-    /* header .wrap h1 a{} */
     header .wrap h1 a img{
         height: 60px;
     }
@@ -85,14 +84,12 @@
         right: 160px;
         transform: unset;
     }
-    header .wrap .btn-search button{}
     header .wrap .btn-search button img{
         height: 33px;
     } 
     .open{
         display: none;
     }
-    
     header .wrap .gnb{  
         background-color:unset;
         position: unset;
@@ -106,16 +103,13 @@
         gap: 20px;
         justify-content: center;
         margin: 0  auto;
-        /* margin-top: 60px; */
     }
     header .gnb .icon{
         display: none;
     }
-    
     header .wrap .gnb .navi{
         position: relative;
     }
-
     header .wrap .gnb .navi .tit{
         position: relative;
         height:unset;
@@ -149,8 +143,6 @@
         margin:unset;
         
     }
-    header .wrap .gnb .navi:last-child button{
-    }
     .reserve{
         border: unset;
         padding: unset;
@@ -163,8 +155,6 @@
         margin: unset;
         
     }
-    header .wrap .gnb .navi:last-child button{
-    }
     .reserve a{
         font-size: 18px;
         font-weight: unset;
@@ -175,7 +165,6 @@
     }
     header .wrap .gnb .navi .sub-navi{
         background-color:unset;
-        /* background-color: #000 */
         display:none;
         width: unset;
         position: absolute;
@@ -275,11 +264,7 @@
     }
     .banner .wrap .con .thumb .image img{
         height: 100%;
-        /* object-fit: contain; */
         width: auto;
-        /* left: 50%;
-        top: 50%;
-        transform: translate(-50%,-50%); */
     }
     .banner .wrap .con .thumb .image img:hover{
         opacity: 0.5;
@@ -307,7 +292,6 @@
     }
     .banner .wrap .con .thumb .txt .date{
         color: #c7c2c2;
-        /* font-size: 11px; */
         font-size: 120px;
         display: flex;
         text-wrap: nowrap;
@@ -317,14 +301,10 @@
         transform: translateX(0);
         width: max-content;
     }
-    .banner .txt > div{
-        /* width: 50%; */
-    }
     .banner .txt .b,
     .banner .date .b{
         display: block;
     }
-
     @keyframes floatingTxt1 {
         0%{transform: translateX(calc(-50% - 50px));}
         100%{transform: translateX(0);}
@@ -333,8 +313,6 @@
         0%{transform: translateX(0);}
         100%{transform: translateX(calc(-50% - 50px));}
     }
-    /* .banner .wrap .con .thumb img{
-    } */
     .banner .wrap .con .subInfo{
         margin-top: 30px;
         display: flex;
@@ -375,8 +353,6 @@
         font-size: 18px;
         text-align: center;
         margin: 0 auto;
-        /* margin-right: 35px; */
-        /* margin-left: 15px; */
     }
     .banner .wrap .con .txt-box .box1 a img,
     .banner .wrap .con .txt-box .box2 a img{
@@ -426,6 +402,7 @@
     .banner .wrap .con .info .ticket .txt h3,
     .banner .wrap .con .info .calendar .txt .sub h3{
         font-size: 18px ;
+        margin-bottom: 5px;
     }
     .banner .wrap .con .info .time .txt .sub p,
     .banner .wrap .con .info .calendar .txt .sub p{
@@ -445,8 +422,6 @@
         margin: unset;
     }
     .section1>.wrap{
-        /* position: relative;
-        height: 600px; */
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -466,7 +441,6 @@
         font-size: 35px;
         color: #b3b3b3;
         font-weight: bolder;
-
     }
     .section1 .wrap .Tit h2{
         font-size: 35px;
@@ -474,12 +448,6 @@
         margin-right: 10px;
     }
     .section1 .exhibition{
-        /* display: flex; */
-        /* height: 100%;
-        width: 300%;
-        position: absolute;
-        top: 0;
-        left: 0; */
         border-radius: 20px;
         box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
         0 2px 4px rgba(0,0,0,0.07), 
@@ -497,15 +465,8 @@
         justify-content: center;
         align-items: center;
     }
-    .section1 .swiper-pagination{
-        /* background-color: palevioletred; */
-    }
-    .section1 .wrap .exhibition .exh1{}
-    .section1 .wrap .exhibition .exh2{}
-    .section1 .wrap .exhibition .exh3{}
     .section1 .wrap .exhibition .exh .thumb{
         width: 40%;
-        /* margin-left:; */
         margin: unset;
         margin-top: 100px;
     
@@ -537,13 +498,6 @@
         position: relative;
         display: flex;
     }
-    /* .section1 .wrap .exhibition .exh .con .tab{
-        display: flex;
-        flex-direction: column;
-        justify-content:end;
-        margin-bottom: auto;
-        margin-right: 15px;
-    } */
     .section1 .wrap .exhibition .exh .con .tab{
         width:unset;
         height: 100px;
@@ -553,11 +507,8 @@
         align-items: center;
         margin-bottom: unset;
         gap: 110px;
-        /* margin-top: 10px; */
         margin-right: 20px;
-    }
-    .section1 .wrap .exhibition .exh .con .tab li:nth-child(1){
-        border-bottom: unset;
+        margin: unset;
     }
     .section1 .wrap .exhibition .exh .con .tab li:nth-child(2){
         padding-top: 50px;
@@ -574,16 +525,12 @@
     }
     .section1 .wrap .exhibition .exh .con .txt{
         width: 80%;
+        margin-top: unset;
     }
     .section1 .wrap .exhibition .exh .con .txt .information{
         display: flex;
         flex-direction: column;
-        /* margin-bottom:70px; */
-        /* margin-top: 60px; */
         gap: 5px;
-    }
-    .section1 .wrap .exhibition .exh:nth-child(3) .con .txt .information{
-        /* margin-bottom: 80px; */
     }
     .section1 .wrap .exhibition .exh .con .txt .information .info1{
         display: flex;
@@ -595,13 +542,12 @@
         color: #000;
         font-weight: bolder;
         font-size: 18px;
-       
     }
     .section1 .wrap .txt .information .info1 h4{
         margin-right: 50px;
     }
     .section1 .wrap .txt .information .info2 h4{
-        margin-right: 10px;
+        margin-right: 15px;
     }
     .section1 .wrap .exhibition .exh .txt .information .info1 P,
     .section1 .wrap .exhibition .exh .txt .information .info2 P{
@@ -609,9 +555,6 @@
         position: unset;
         text-wrap: nowrap;
         font-size: 17px;
-        
-    }
-    .section1 .wrap .exhibition .exh .txt .information .info2{
     }
     .section1 .wrap .exhibition .exh .txt .information .info3{  
         display: flex;
@@ -628,6 +571,7 @@
         position: unset;
         font-size: 17px;
         width: 80%;
+        line-height: 25px;
     }
     .section1 .wrap .exhibition .exh .txt .intro{
         display: unset;
@@ -641,6 +585,7 @@
         -webkit-line-clamp: 4;
         width: 100%;
         margin: unset;
+        line-height: 26px;
     }
     .section1 .swiper-pagination-bullet-active{
         background-color: #000;
@@ -671,8 +616,6 @@
     /* section2 */
     .section2{
         padding: 40px 16px 99px;
-        /* margin: 50px 0; */
-        /* overflow: hidden; */
     }
     .section2 .swiper{
         width: 100%;
@@ -715,14 +658,10 @@
         font-size: 25px;
         font-weight: bolder;
     }
-    .section2 .swiper-pagination{
-        /* display: none; */
-    }
     .section2 .swiper-slide{
         display: flex;
         justify-content: center;
         align-items: center;
-        /* width: 100%; */
         margin-bottom: 100px;
         margin-top: auto;
     }
@@ -753,23 +692,12 @@
     }
     .section2 .wrap .slide{
         display: flex;
-        /* overflow: hidden; */
-    }
-    .section2 .wrap .slide .collection{
-        /* display: flex;
-        gap: 10px;
-        white-space: nowrap;
-        overflow-x: scroll;
-        align-items: end;
-        flex-direction: initial; */
     }
     .collection1{
         padding-bottom: 15px;
     }
     .collection2{
       padding-bottom: 80px;
-    }
-    .collection3{
     }
     .collection4{
         padding-bottom: 130px;
@@ -780,23 +708,14 @@
     .collection5 {
         padding-bottom: 100px;
     }
-    .collection6{
-    }
     .collection7{
         padding-bottom: 200px;
-    }
-    .section2 .wrap .slide .col{
-        /* margin-left: 20px; */
-        
     }
     .section2 .wrap .slide .col a{
         display: block;
         width: 100%;
     }
     .section2 .wrap .slide .col a img{
-        /* object-fit: contain;
-        max-width: 400px;
-        max-height: 400px; */
         margin-bottom: 10px;
         border-radius: 5px;
         width: 100%;
@@ -806,13 +725,12 @@
     .section2 .swiper-pagination-bullet-active{
         background-color: #000;
     }
-    
     .section2 .wrap .slide .col a h3{
-        font-size: 25px;
+        font-size: 23px;
         font-weight: bolder;
     }
     .section2 .wrap .slide .col a p{
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         color: #555555;
     }
@@ -840,8 +758,6 @@
         text-align: center;
         
     }
-    .section3 .wrap a{
-    }
     .section3 .wrap h1{
         color: #fff;
         font-size: 20px;
@@ -853,7 +769,6 @@
     .section3 .wrap h2{
         color: #fff;
         font-size: 30px;
-        /* margin-top: 5px; */
         margin-bottom: 15px;
     }
     .section3 .viewMore{
@@ -897,11 +812,7 @@
     /* section4 */
     .section4{
         padding: 40px 16px 99px;
-        /* position: relative; */
         margin-bottom: 50px;
-    }
-    .section4 .wrap{
-        /* position: relative; */
     }
     .section4 .wrap .Tit{
         display: flex;
@@ -937,11 +848,6 @@
         border-left: 1px solid #000; 
     }
     .section4 .wrap .slide{
-        /* position: relative;
-        width: 100%;
-        height: 100%;
-        margin:0 auto;
-        overflow: unset; */
         display: flex;
     }
     .section4 .wrap .slide .contents{
@@ -972,7 +878,6 @@
     }
     .section4 .wrap .slide .contents .pro img{
         width: 80%;
-        /* margin: 0 auto; */
         display: flex;
     
     }
@@ -981,8 +886,6 @@
         padding: 15px 0;
         border-top: 2px solid #000;
         border-bottom: 2px solid #000;
-        /* border: 2px solid orange; */
-        /* margin-top: 8px; */
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -1038,7 +941,6 @@
     .section5{
         padding: 40px 16px 99px;
         margin-bottom: 50px;
-        /* position: relative; */
     }
     .section5 .wrap{
         position:unset;
@@ -1047,20 +949,19 @@
     }
     .edu_pro{
         display: flex;
-        /* position: relative;
-        padding: 50px; */
         align-items: center;
+        width: 100%;
     }
     .section5 .wrap .edu_pc{
         display:flex;
-        /* position: absolute;
-        right: 0; */
+        width:40%;
     }
     .section5 .wrap .edu_pc a{
+        width: 100%;
     }
     .section5 .wrap .edu_pc a img{
-        width: 700px;
         margin: 0 auto;
+        width: 100%;
     }
     .section5 .wrap .Tit{
         margin-bottom: 100px;
@@ -1118,28 +1019,24 @@
         flex-shrink: unset;
     }
     .section5 .wrap .swiper-slide{
-        display: block;
-        width: 100%;
+        display:flex;
         height: 100%;
-        object-fit: cover;
-        /* columns:  */
-        width: 100%;
-        
-    
+        object-fit: unset;
     }
     .section5 .wrap .con{
         margin:unset;
-        margin-right: auto;
+        margin-right: unset;
         display: flex;
         flex-direction: column;
     }
     .section5 .wrap .con .cont{
-        /* position: unset; */
         width: 100%;
         height: 100%;
         display: block;
         object-fit: cover;
-        margin-bottom: unset;   
+        margin-bottom: 30px;  
+        margin-right: 50px; 
+        
     }
     .section5 .wrap .con .mob{
         display: none;
@@ -1152,7 +1049,7 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
-        margin-right: 50px;
+        margin-right: unset;
         width: 90%;
     }
     .section5 .wrap .con .cont:nth-child(2) a{
@@ -1161,18 +1058,18 @@
     .section5 .wrap .con .cont img{
         width: unset;
         height: auto;
-        margin-right: 50px;
+        margin-right: 25px;
     }
     .section5 .wrap .con .cont .txt{
         position:relative;
         top:unset;
         left: unset;
         z-index: unset;
-        width: 60%;
-        padding-right: 20px;
-        /* margin-left: 20px; */
+        width: 100%;
+        padding-right: unset;
         transform: unset;
         color: #000;
+        margin-left: auto;
     }
     .section5 .wrap .con .cont .txt h3{
         font-size: 20px;
@@ -1187,8 +1084,6 @@
         font-size: 20px;
         font-weight: bolder;
         margin-bottom: 20px;
-    }
-    .section5 .wrap .con .cont .txt p:nth-child(1){
     }
     .section5 .wrap .con .cont .txt .pro1{
         font-size: 18px;
@@ -1209,7 +1104,6 @@
     .section5 .swiper-pagination{
         display: none;
     }
-
 
     /* section6 */
     .section6{
@@ -1337,8 +1231,6 @@
       font-size: 20px;
     }
     .section6 .wrap .section6_right{display:unset;}
-    .section6_right{
-    }
     .section6_right .swiper {
         width: 500px;
         height:100%;
@@ -1371,8 +1263,6 @@
         padding: 30px 20px;
         display: flex;
     }
-    footer .copyright-txt{
-    }
     footer .copyright-txt p{
         font-size: 14px;
         margin-bottom: 20px;
@@ -1385,12 +1275,7 @@
         margin:unset;
         gap: 10px;
     }
-    footer .footer_icon li{}
-    footer .footer_icon li a{}
-    footer .footer_icon li a img{}
-    footer .footer_logo{}
-    footer .footer_logo a{}
     footer .footer_logo a img{
         width: 100%;
-        }    
+    }    
 }
