@@ -173,7 +173,6 @@
                         <div class="txt">
                             <div class="tit">
                                 <div class="a">포스트모던 어린이 [1부]: 불안한 어린이를 위해 조용한 자장가를 불러주지 마세요</div>
-                                <!-- <div class="b">포스트모던 어린이 [1부]: 불안한 어린이를 위해 조용한 자장가를 불러주지 마세요</div> -->
                             </div>
                             <div class="date">
                                 <div class="a">기간 : 2023. 5. 5.(금) ~ 2023. 8. 27.(일)</div>
@@ -562,7 +561,7 @@
                                     </div>
                                 </a>
                             </div>
-                            <div class="cont swiper-slide">
+                            <div class="cont swiper-slide mob">
                             <a href="#">
                                     <img src="images/edu_3" alt="">
                                     <div class="txt">
@@ -572,7 +571,7 @@
                                     </div>
                             </a>
                             </div>
-                            <div class="cont swiper-slide">
+                            <div class="cont swiper-slide mob">
                                 <a href="#">
                                     <img src="images/edu_4" alt="">
                                     <div class="txt">
@@ -797,46 +796,25 @@
                 }, 200);
             }
         });
-        //nav mobile desktop 
-        const NavMobile = function() {
-            $(".navi .tit").on("click", function(){
-                $(this).siblings().stop().slideToggle(300);
-                $(this).parent().siblings().find(".sub-navi").slideUp();
-            })
-            
-            //section1 슬라이드
-            var swiper = new Swiper(".section1 .swiper", {
-                slidesPerView: 1,
-                spaceBetween: 30,
-                loop: false,
-                pagination: {
-                    el: ".section1 .swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-            }); 
 
-            $(".section1 .con button").on("click",function(){
-                const c = $(this).index();
-                $(this).parent().siblings().children().eq(c).show()
-                $(this).parent().siblings().children().eq(c).siblings().hide()
-             });
-               
-            var swiper2 = new Swiper(".section2 .swiper", {
-            slidesPerView: 1.5,
-            spaceBetween: 12,
-            freeMode: true,
+        //section1 슬라이드
+        var swiper = new Swiper(".section1 .swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: false,
             pagination: {
-                el: ".section2 .swiper-pagination",
+                el: ".section1 .swiper-pagination",
                 clickable: true,
             },
-            });
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+        
 
-            //section4 슬라이드
-            var swiper3 = new Swiper(".section4 .swiper", {
+        //section4 슬라이드
+        var swiper3 = new Swiper(".section4 .swiper", {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
@@ -848,10 +826,28 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            }); 
+            breakpoints: {
+                800: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    },
+                },
+                1200: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    },
+                }
+            },
+        }); 
 
-            //section5 슬라이드
-            var swiper5 = new Swiper(".section5 .swiper", {
+         //section5 슬라이드
+         var swiper5 = new Swiper(".section5 .swiper", {
             slidesPerView: 1,
             spaceBetween: 30,
             loop: true,
@@ -863,20 +859,88 @@
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            }); 
+            breakpoints: {
+                800: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    },
+                },
+            },
+        }); 
+        //section6(공지사항) tab
+        $(".infoTab li").click(function(){
+           const d = $(this).index();
+           console.log(d)
+           $(".infoTab li button").css("color", "#d9d9d9");
+           $(".infoTab li button").eq(d).css("color", "#000");
+           $(".d").hide();
+           $(".d").eq(d).show();
+        })
+
+        
+        //section6 자동재생 슬라이드
+        var swiper = new Swiper(".mySwiper", {
+           spaceBetween: 30,
+           centeredSlides: true,
+           autoplay: {
+               delay: 2500,
+               disableOnInteraction: false,
+           },
+           pagination: {
+               el: ".swiper-pagination",
+               clickable: true,
+           },
+           navigation: {
+               nextEl: ".swiper-button-next",
+               prevEl: ".swiper-button-prev",
+           },
+        });
+
+        //nav mobile desktop 
+        const NavMobile = function() {
+            $(".navi .tit").on("click", function(){
+                $(this).siblings().stop().slideToggle(300);
+                $(this).parent().siblings().find(".sub-navi").slideUp();
+            })
+             
+            $(".section1 .con button").on("click",function(){
+                const c = $(this).index();
+                $(this).parent().siblings().children().eq(c).show()
+                $(this).parent().siblings().children().eq(c).siblings().hide()
+             });
+               
+            var swiper2 = new Swiper(".section2 .swiper", {
+                slidesPerView: 1.5,
+                spaceBetween: 12,
+                freeMode: true,
+                pagination: {
+                    el: ".section2 .swiper-pagination",
+                    clickable: true,
+                },
+            });
+
+
+
+           
         }
         const NavDesktop = function() {
             $(".navi .tit").off("click",function(){});
 
+            $(".section1 .con button").off("click",function(){});
+
             var swiper = new Swiper(".section2 .swiper", {
-            slidesPerView:3,
-            spaceBetween: 12,
-            freeMode: true,
-            pagination: {
-                el: ".section2 .swiper-pagination",
-                clickable: true,
-            },
+                slidesPerView:5,
+                spaceBetween: 50,
+                freeMode: true,
+                pagination: {
+                    el: ".section2 .swiper-pagination",
+                    clickable: true,
+                },
             });
+
         }
 
         const HandleResponsiveEvent = function() {
@@ -895,37 +959,7 @@
             HandleResponsiveEvent();
         });
         HandleResponsiveEvent();
-        
-        
-        //section5 슬라이드
-        
-         //section6(공지사항) tab
-         $(".infoTab li").click(function(){
-            const d = $(this).index();
-            console.log(d)
-            $(".infoTab li button").css("color", "#d9d9d9");
-            $(".infoTab li button").eq(d).css("color", "#000");
-            $(".d").hide();
-            $(".d").eq(d).show();
-         })
-
-         //section6 자동재생 슬라이드
-         var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            });
+    
          
     </script>
 </body>
