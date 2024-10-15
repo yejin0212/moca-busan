@@ -56,6 +56,7 @@
         text-align: center;
         transform: unset;
         border-right: none;
+        
     }
     header .wrap .langE:hover{
         background-color: #000;
